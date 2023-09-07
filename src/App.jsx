@@ -1,11 +1,11 @@
+import Navigation from "./layouts/navigation";
 
 function App() {
-
-  return (
-    <>
-      <h1>Hello</h1>
-    </>
-  );
+    return (
+        <>
+            <Navigation />
+        </>
+    );
 }
 
 export default App;
