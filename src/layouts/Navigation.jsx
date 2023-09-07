@@ -4,7 +4,7 @@ const Navigation = () => {
     return <header>
         <nav>
             <ul>
-                <li className=" text-fuchsia-400">first list</li>
+                <li className=" text-primary-color text-h1 ">first list</li>
             </ul>
         </nav>
     </header>;
