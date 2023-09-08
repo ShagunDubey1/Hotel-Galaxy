@@ -5,6 +5,7 @@ function App() {
     return (
         <>
             <Navigation />
+            <div className=""></div>
             <Footer />
         </>
     );

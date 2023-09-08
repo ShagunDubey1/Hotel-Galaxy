@@ -58,24 +58,24 @@ const Navigation = () => {
             </header>
             {/* =================toggle navigation bar===================== */}
             {showNavbar && (
-                <div className=" relative w-full bg-[#f8f8f8f] container">
+                <div className=" relative w-full bg-white z-20">
                     <ul className=" w-full flex flex-col justify-center items-start text-lg  font-semibold font-['Josefin_Sans'] cursor-pointer z-40">
-                        <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-gray-200 hover:font-bold">
+                        <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
                             Home
                         </li>
-                        <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-gray-200 hover:font-bold">
+                        <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
                             About
                         </li>
-                        <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-gray-200 hover:font-bold">
+                        <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
                             Rooms
                         </li>
-                        <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-gray-200 hover:font-bold">
+                        <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
                             Dining
                         </li>
-                        <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-gray-200 hover:font-bold">
+                        <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
                             Meetings & Events
                         </li>
-                        <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-gray-200 hover:font-bold">
+                        <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
                             Contact
                         </li>
                     </ul>
