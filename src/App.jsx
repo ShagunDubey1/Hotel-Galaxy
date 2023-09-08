@@ -1,9 +1,11 @@
-import Navigation from "./layouts/navigation";
+// import Navigation from "./layouts/navigation";
+import Home from "./pages/Home";
 
 function App() {
     return (
         <>
-            <Navigation />
+            {/* <Navigation /> */}
+            <Home />
         </>
     );
 }

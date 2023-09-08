@@ -24,9 +24,11 @@ input,
 textarea,
 button,
 li,
+div,
 ::after,
 ::before {
     font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
 }
 
 body {
