@@ -5,10 +5,10 @@ const Navigation = () => {
     const [showNavbar, setShowNavbar] = useState(false);
     return (
         <>
-            <header className="container bg-primary-color relative w-full flex justify-center   items-start md:items-center flex-col md:flex-row md:bg-black">
-                <nav className=" relative w-full flex justify-between items-center p-4 max-w-[1140px]">
+            <header className=" bg-primary-color relative w-full flex justify-center   items-start md:items-center flex-col md:flex-row md:bg-black">
+                <nav className=" relative w-full flex justify-between items-center p-4 max-w-[1140px] container">
                     <div>
-                        <h4 className="text-white md:text-primary-color text-xl font-semibold md:font-normal md:text-3xl uppercase">
+                        <h4 className="text-white md:text-primary-color text-xl font-semibold md:font-normal md:text-2xl lg:text-3xl uppercase">
                             Hotel Galaxy
                         </h4>
                     </div>
@@ -45,10 +45,11 @@ const Navigation = () => {
                             <li>Home</li>
                             <li>About</li>
                             <li>Rooms</li>
+                            <li>Dining</li>
                             <li>Meetings & Events</li>
                             <li>Contact</li>
                         </ul>
-                        <button className=" bg-primary-color px-6 py-3 text-white text-md uppercase hover:bg-white hover:text-primary-color transition-all duration-200 ease-in-out tracking-wide">
+                        <button className=" hidden bg-primary-color px-6 py-3 text-white text-md uppercase hover:bg-white hover:text-primary-color transition-all duration-200 ease-in-out tracking-wide lg:block">
                             Book Now
                         </button>
                     </div>
@@ -58,7 +59,7 @@ const Navigation = () => {
             {/* =================toggle navigation bar===================== */}
             {showNavbar && (
                 <div className=" relative w-full bg-[#f8f8f8f] container">
-                    <ul className=" w-full flex flex-col justify-center items-start text-lg  font-semibold font-['Josefin_Sans'] cursor-pointer">
+                    <ul className=" w-full flex flex-col justify-center items-start text-lg  font-semibold font-['Josefin_Sans'] cursor-pointer z-40">
                         <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-gray-200 hover:font-bold">
                             Home
                         </li>
@@ -67,6 +68,9 @@ const Navigation = () => {
                         </li>
                         <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-gray-200 hover:font-bold">
                             Rooms
+                        </li>
+                        <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-gray-200 hover:font-bold">
+                            Dining
                         </li>
                         <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-gray-200 hover:font-bold">
                             Meetings & Events
