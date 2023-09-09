@@ -6,6 +6,7 @@ export default {
             colors: {
                 "primary-color": "#dba765",
                 "secondory-color": "#F8F5F0",
+                "pale-yellow": "#F6F4EB",
                 heading: {
                     dark: "#000000",
                     light: "#4d4d4d",
@@ -45,6 +46,9 @@ export default {
                     },
                 ],
             },
+            fontFamily:{
+                
+            }
         },
     },
     plugins: [],
