@@ -1,11 +1,13 @@
 // Importing icons 
-import { BsAlarm, BsKey} from 'react-icons/BS';
-import { GrUserManager, GrRestroomWomen} from 'react-icons/gr';
-import {AiOutlineCar, AiOutlineSafety, AiOutlineStar, AiOutlineHome} from 'react-icons/ai';
-import {FaBriefcaseMedical, FaHandsHelping, FaWifi, FaConciergeBell} from 'react-icons/fa';
-import {MdOutlineLocalLaundryService} from 'react-icons/md';
 import {FcManager} from 'react-icons/fc';
-import {BiMap, BiHomeAlt2} from 'react-icons/bi';
+import {GiRotaryPhone} from 'react-icons/gi';
+import {BsAlarm, BsKey} from 'react-icons/BS';
+import {RiCustomerService2Fill} from 'react-icons/ri';
+import {MdOutlineLocalLaundryService} from 'react-icons/md';
+import {GrUserManager, GrRestroomWomen} from 'react-icons/gr';
+import {BiMap, BiHomeAlt2, BiPhoneCall} from 'react-icons/bi';
+import {FaBriefcaseMedical, FaHandsHelping, FaWifi, FaConciergeBell} from 'react-icons/fa';
+import {AiOutlineCar, AiOutlineSafety, AiOutlineStar, AiOutlineHome, AiFillStar} from 'react-icons/ai';
 
 
 // Importing Images
@@ -15,7 +17,72 @@ import eventHall from "../assets/Images/eventHall.jpeg";
 import image1 from "../assets/Images/img.jpeg";
 import bath from "../assets/Images/bath.jpeg";
 
+import { useState } from 'react';
 
+// ABOUT US SECTION 
+
+function TabbedContent() {
+  const [activeTab, setActiveTab] = useState('about');
+
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
+
+  return (
+    <div className='p-5 lg:w-1/2 flex flex-col '>
+        <div className=" text-3xl font-semibold flex flex-row justify-start gap-2">
+            <button
+                className={activeTab === 'about' ? ' text-primary-color' : ''}
+                onClick={() => handleTabClick('about')}
+                >
+                About
+                {activeTab === 'about' && (
+                    <div className=" bottom-0 left-0 w-full h-0.5 bg-yellow-400"></div>
+                )}
+            </button>
+            <button
+                className={activeTab === 'features' ? ' text-primary-color' : ''}
+                onClick={() => handleTabClick('features')}
+                >
+                Features
+                {activeTab === 'features' && (
+                    <div className=" bottom-0 left-0 w-full h-0.5 bg-yellow-400"></div>
+                )}
+            </button>
+            <button
+                className={activeTab === 'info' ? ' text-primary-color' : ''}
+                onClick={() => handleTabClick('info')}
+                >
+                Info
+                {activeTab === 'info' && (
+                    <div className=" bottom-0 left-0 w-full h-0.5 bg-yellow-400"></div>
+                )}
+            </button>
+        </div>
+        <div className="">
+            {activeTab === 'about' && (
+            <div>
+                <p>Welcome to Hotel Galaxy Prayagraj.<br></br>
+                        At Hotel Galaxy Prayagraj, we take pride in providing a luxurious and memorable stay experience in the heart of the historic city of Prayagraj (formerly known as Allahabad). Our commitment to excellence and unwavering dedication to guest satisfaction have made us a preferred choice for travelers seeking comfort, convenience, and warm hospitality.</p>
+            </div>
+            )}
+            {activeTab === 'features' && (
+            <div>
+                <p>Welcome to Hotel Galaxy Prayagraj.</p>
+            </div>
+            )}
+            {activeTab === 'info' && (
+            <div>
+                <p>Welcome to Hotel Galaxy Prayagraj.</p>
+            </div>
+            )}
+        </div>
+    </div>
+  );
+}
+
+
+// MAIN CONTENT OF THE PAGE
 
 const Home = () => {
     return (
@@ -67,7 +134,9 @@ const Home = () => {
                 </div>
             </div>
 
+
             {/* INFORMATION */}
+
             <div className=" w-full h-auto flex flex-row flex-wrap gap-5 justify-center mt-10">
                 <div className=" w-56 h-52 text-sm flex flex-col flex-wrap justify-center items-center shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out text-center">
                     <BiMap className=' h-20 w-8'/>
@@ -88,6 +157,7 @@ const Home = () => {
 
 
             {/* FEATURES  */}
+
             <div className=" w-auto h-auto flex flex-col lg:flex-row flex-wrap justify-center mt-24 mx-20 md:mx-8 sm:mx-0">
                 <div className=" w-4/5 lg:w-1/2 flex flex-row justify-center gap-4">
                     <img src={image1} alt="photo" className=' w-52 h-72  mb-10'/>
@@ -114,13 +184,12 @@ const Home = () => {
                             <p className=' font-extrabold text-sm'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, sit.</p>
                         </div>
                     </div>
-                    
-                    
                 </div>
             </div>
 
 
             {/* SERVICES */}
+
             <div className=" md:mx-12 lg:mx-24 mt-16 flex justify-center flex-col items-center relative">
                 <div className=" text-4xl font-extrabold text-center">Our Services & Amenities</div>
                 <div className="w-1/3 h-0.5 bg-primary-color mx-auto my-4"></div>
@@ -226,13 +295,15 @@ const Home = () => {
                         <img src={room1} alt="Hotal Galalxy" className=' w-full'/>
                     </div>
                 </div>
-                <div className=" p-5 lg:w-1/2 flex flex-col justify-around">
+                {/* <div className=" p-5 lg:w-1/2 flex flex-col justify-around">
                     <div className=" text-4xl font-extrabold ">About us</div>
                     <div className="w-1/3 h-0.5 bg-primary-color "></div>
                     <div className="">Welcome to Hotel Galaxy Prayagraj.<br></br>
                         At Hotel Galaxy Prayagraj, we take pride in providing a luxurious and memorable stay experience in the heart of the historic city of Prayagraj (formerly known as Allahabad). Our commitment to excellence and unwavering dedication to guest satisfaction have made us a preferred choice for travelers seeking comfort, convenience, and warm hospitality.
                     </div>
-                </div>
+                </div> */}
+                <TabbedContent />
+
             </div>
 
 
@@ -247,10 +318,8 @@ const Home = () => {
                     className="absolute inset-0 object-cover w-full h-full"
                 >
                     <source src="https:\/\/www.youtube.com\/watch?v=zr4r3n5Smho&quot" type="video/mp4" />
-                    {/* Add other video sources if needed for different formats */}
                 </video>
                 <div className="absolute inset-0 flex flex-col justify-evenly items-center ">
-                    {/* Content for your div */}
                     <div className=' text-primary-color'>Hotel Galaxy</div>
                     <div className=" text-3xl text-center">A Warm, Exquisite, Practical and Urban Space</div>
                     <button className="h-8 w-24 bg-orange-400 border-2 border-gray-300 transition duration-300 ease-in-out group hover:bg-gray-200 hover:border-orange-400">Book now</button>
@@ -259,7 +328,69 @@ const Home = () => {
 
 
 
+            {/* BOOKING FORM  */}
 
+            <div className="w-full h-auto lg:p-24 bg-cover bg-center bg-no-repeat bg-[url('')] flex flex-col lg:flex-row md:flex-row justify-center items-center gap-4 p-4">
+                <div className=" w-full sm:w-full md:w-full lg:w-2/4 xl:w-2/4 h-80 flex flex-col justify-evenly sm:p-0 md:p-4 lg:p-6 xl:p-6 ">
+                    <div className="">
+                        <div className=' flex flex-row text-primary-color '><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/></div>
+                        <p className=' text-3xl text-primary-color'>Feel free to Call us anytime!</p>
+                    </div>
+
+                    <p>Each of our guest rooms feature a private bath, wi-fi, cable television and include full breakfast.</p>
+
+                    <div className=' flex flex-row flex-wrap items-center gap-4'>
+                        <span><RiCustomerService2Fill className='w-12 h-20'/></span>
+                        <div className="">
+                            <p className=' flex flex-row font-sans text-sm items-center gap-1'><BiPhoneCall/> +91-9918901686 || <GiRotaryPhone />0532-2400507 </p>
+                            <p>For more information</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div className="w-full sm:w-full md:w-full lg:w-2/4 xl:w-2/4 flex flex-row flex-wrap justify-center items-center bg-secondory-color h-60">
+                        
+                    <div className=" w-28 flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm bg-pale-yellow">Check-in
+                        <input className=" bg-transparent border border-gray-300" type="date" />
+                    </div>
+                    <div className=" w-28 flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm ">Check-out
+                        <input className=" bg-transparent border  border-gray-300" type="date" />
+                    </div>
+                    <div className=" w-28 flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm">Adult
+                        <select className=" bg-transparent border border-gray-300" name="check-in" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="1">3</option>
+                            <option value="2">4</option>
+                            <option value="1">5</option>
+                            <option value="2">6</option>
+                        </select>
+                    </div>
+                    <div className=" w-28 flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm">Children
+                        <select className=" bg-transparent border border-gray-300" name="check-in" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="1">3</option>
+                            <option value="2">4</option>
+                            <option value="1">5</option>
+                            <option value="2">6</option>
+                        </select>
+                    </div>
+                    <div className=" w-28 flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm">Rooms
+                        <select className=" bg-transparent border border-gray-300" name="check-in" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="1">3</option>
+                            <option value="2">4</option>
+                            <option value="1">5</option>
+                            <option value="2">6</option>
+                        </select>
+                    </div>
+                    <div className=" w-28 flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm">
+                        <button className="h-8 w-full bg-orange-400 border-2 border-gray-300 transition duration-300 ease-in-out group hover:bg-gray-200 hover:border-orange-400">Book now</button>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
