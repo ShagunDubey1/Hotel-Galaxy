@@ -1,11 +1,17 @@
-// import Navigation from "./layouts/navigation";
+
 import Home from "./pages/Home";
+import Footer from "./layouts/Footer";
+import Navigation from "./layouts/navigation";
+
 
 function App() {
     return (
         <>
-            {/* <Navigation /> */}
+
+            <Navigation />
             <Home />
+            <Footer />
+
         </>
     );
 }
