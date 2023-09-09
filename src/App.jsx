@@ -1,7 +1,8 @@
 
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
 import Footer from "./layouts/Footer";
 import Navigation from "./layouts/navigation";
+import Rooms from "./pages/Rooms";
 
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
         <>
 
             <Navigation />
-            <Home />
+            {/* <Home /> */}
+            <Rooms />
             <Footer />
 
         </>
