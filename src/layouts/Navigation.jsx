@@ -13,7 +13,7 @@ const Navigation = () => {
 
     return (
         <>
-            <header className=" bg-primary-color relative w-full flex justify-center   items-start md:items-center flex-col md:flex-row md:bg-black">
+            <header className=" fixed top-0 left-0 right-0 z-50 bg-primary-color w-full flex justify-center   items-start md:items-center flex-col md:flex-row md:bg-transparent ">
                 <nav className=" relative w-full flex justify-between items-center p-4 max-w-[1140px] container">
                     <div>
                         <h4 className="text-white md:text-primary-color text-xl font-semibold md:font-normal md:text-2xl lg:text-3xl uppercase">
