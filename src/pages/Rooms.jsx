@@ -1,5 +1,6 @@
 import { IoChevronForward } from "react-icons/io5";
 import RoomCard from "../components/roomCard/RoomCard";
+import { forwardRef } from "react";
 
 const HeroWrapper = () => {
     return (
@@ -105,7 +106,7 @@ const Rooms = () => {
     return (
         <main>
             <HeroWrapper />
-            <CardWrapper />
+            <CardWrapper/>
         </main>
     );
 };
