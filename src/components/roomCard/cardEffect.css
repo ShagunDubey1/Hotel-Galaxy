@@ -1,0 +1,20 @@
+.card .card-element-front{
+    transition: all 0.8s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card .card-element-back {
+    transform: rotateY(180deg);
+    transition: all 0.8s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card:hover .card-element-back {
+    transform: rotateY(0);
+}
+
+.card:hover .card-element-front{
+    transform: rotateY(-180deg);
+}
