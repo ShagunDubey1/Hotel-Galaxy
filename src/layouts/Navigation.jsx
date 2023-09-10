@@ -1,19 +1,34 @@
-import { useEffect, useRef, useState } from "react";
+import { useState,useEffect, useRef } from "react";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 
 const Navigation = () => {
     const [showNavbar, setShowNavbar] = useState(false);
-    const [isIntersecting, setIsIntersecting] = useState(false);
+    const [scrolling, setScrolling] = useState(false);
     const ref = useRef(null);
-
     useEffect(() => {
-        const observer = new IntersectionObserver;
-        console.log(observer);
-    },[])
+        const handleScroll = () => {
+            if (window.scrollY >= 200) {
+                setScrolling(true);
+            } else {
+                setScrolling(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     return (
         <>
-            <header className=" fixed top-0 left-0 right-0 z-50 bg-primary-color w-full flex justify-center   items-start md:items-center flex-col md:flex-row md:bg-transparent ">
+            <header
+                ref={ref}
+                className={`fixed top-0 left-0 right-0 z-50 bg-primary-color w-full flex justify-center   items-start md:items-center flex-col md:flex-row ${
+                    !scrolling ? "md:bg-transparent" : "md:bg-black"
+                }`}
+            >
                 <nav className=" relative w-full flex justify-between items-center p-4 max-w-[1140px] container">
                     <div>
                         <h4 className="text-white md:text-primary-color text-xl font-semibold md:font-normal md:text-2xl lg:text-3xl uppercase">
