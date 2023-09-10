@@ -1,13 +1,12 @@
 import Footer from "./layouts/Footer";
 import Navigation from "./layouts/navigation";
-import Gallery from "./pages/Gallery";
-
+import Home from "./pages/Home";
 
 function App() {
     return (
         <>
-            <Navigation/>
-            <Gallery />
+            <Navigation />
+            <Home />
             <Footer />
         </>
     );
