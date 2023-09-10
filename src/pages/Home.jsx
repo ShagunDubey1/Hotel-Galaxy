@@ -2,6 +2,7 @@
 import {FcManager} from 'react-icons/fc';
 import {GiRotaryPhone} from 'react-icons/gi';
 import {BsAlarm, BsKey} from 'react-icons/BS';
+import { IoChevronForward } from "react-icons/io5";
 import {RiCustomerService2Fill} from 'react-icons/ri';
 import {MdOutlineLocalLaundryService} from 'react-icons/md';
 import {GrUserManager, GrRestroomWomen} from 'react-icons/gr';
@@ -23,7 +24,32 @@ import logo from "../assets/logo.png"
 import { useState } from 'react';
 
 
+// HERO WRAPPER 
 
+const HeroWrapper = () => {
+    return (
+        <section
+            className="w-full  overflow-hidden h-[27rem] bg-cover bg-center bg-no-repeat  flex justify-center items-center text-center text-white flex-col relative"
+            style={{
+                backgroundImage: "url('../../src/assets/images/img.jpeg')",
+            }}
+        >
+            <div className=" bg-filter absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed flex justify-center items-center flex-col">
+                <div className="  pb-4">
+                    <h1 className=" text-[3.25rem] font-normal capitalize">
+                        rooms
+                    </h1>
+                    <img></img>
+                </div>
+                <div className=" font-bold">
+                    <p className="  text-p uppercase flex justify-center items-center gap-3 font-normal">
+                        home <IoChevronForward /> <span>rooms</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    );
+};
 
 // ABOUT US SECTION 
 
@@ -118,10 +144,11 @@ const Event = () => {
 const Home = () => {
     return (
         <>
-            <div className="w-full h-screen bg-cover bg-center bg-no-repeat bg-[url('https://images.pexels.com/photos/5868075/pexels-photo-5868075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] flex justify-center items-center text-center text-white flex-col relative">
+            <HeroWrapper />
+            {/* <div className="w-full h-screen bg-cover bg-center bg-no-repeat bg-[url('https://images.pexels.com/photos/5868075/pexels-photo-5868075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] flex justify-center items-center text-center text-white flex-col relative">
                 <div className="font-fnt text-5xl"><p className=' font-extrabold'>SUPERIOR HOTEL IN PRAYAGRAJ</p></div>
                 <div className=" font-bold">Luxury & Lifestyle That is rare, Premium & Top of the World</div>
-            </div>
+            </div> */}
             
             <div className="lg:h-28 md:h-auto m-auto bg-pale-yellow w-5/6  -mt-14 transform  flex flex-row flex-wrap justify-evenly items-center">
                 <div className=" w-28 h-24 flex flex-col justify-evenly p-4 md:p-2 sm:p-2 text-sm">
@@ -318,19 +345,6 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className=" w-60 h-64 relative transform-style-preserve-3d transition-all duration-800 ease-out">
-                        <>
-                            <div className="w-full h-full absolute top-0 left-0" style={{ background: 'linear-gradient(180deg, #00000080 0%, #DBA76BB3 100%)' }}></div>
-                            <img className='h-full' src={room2} alt="Room" />
-                            <div className="absolute inset-0 flex flex-col pl-8 pb-8 justify-end text-white">
-                                <p className="text-lg font-semibold">Room</p>
-                                <p className=' text-sm'>2 beds / bathroom</p>
-                            </div>
-                        </>
-                        <div>
-
-                        </div>
-                    </div>
                 </div>
                 
                 <div className=' text-lg items-center'>Our hotel boasts a range of well-appointed rooms and suites, each designed to provide you with a restful retreat. Whether you are here for a business trip, a family vacation, or a pilgrimage, our accommodations offer a serene ambiance and contemporary amenities to ensure a relaxed stay.</div>
