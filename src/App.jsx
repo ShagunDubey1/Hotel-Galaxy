@@ -1,13 +1,13 @@
 import Footer from "./layouts/Footer";
 import Navigation from "./layouts/navigation";
-import Rooms from "./pages/Rooms";
+import Events from "./pages/Events";
 
 
 function App() {
     return (
         <>
             <Navigation/>
-            <Rooms/>
+            <Events />
             <Footer />
         </>
     );
