@@ -2,7 +2,6 @@ import HeroWrapper from "../components/HeroWrapper";
 import room3 from "../assets/Images/room3.jpeg";
 import logo from "../assets/logo.png";
 
-
 const EventCard = () => {
     return (
         <section className="  relative  w-full  flex  flex-col justify-center items-center max-w-[1140px] pt-24">

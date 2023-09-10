@@ -1,13 +1,13 @@
 import Footer from "./layouts/Footer";
 import Navigation from "./layouts/navigation";
-import Events from "./pages/Events";
+import Gallery from "./pages/Gallery";
 
 
 function App() {
     return (
         <>
             <Navigation/>
-            <Events />
+            <Gallery />
             <Footer />
         </>
     );
