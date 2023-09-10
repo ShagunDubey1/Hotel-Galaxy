@@ -1,8 +1,16 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 
 const Navigation = () => {
     const [showNavbar, setShowNavbar] = useState(false);
+    const [isIntersecting, setIsIntersecting] = useState(false);
+    const ref = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver;
+        console.log(observer);
+    },[])
+
     return (
         <>
             <header className=" bg-primary-color relative w-full flex justify-center   items-start md:items-center flex-col md:flex-row md:bg-black">
