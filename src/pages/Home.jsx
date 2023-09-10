@@ -123,7 +123,7 @@ const Event = () => {
                 <div className=" row-start-1 row-span-1 col-start-1 col-span-1">
                     <img src={logo} alt="" className=' max-h-full'/>
                 </div>
-                <div className=" row-start-2 row-span-2 col-start-1 col-span-3 bg-primary-color z-10 relative clipping text-white p-6">
+                <div className=" row-start-2 row-span-2 col-start-1 col-span-3 z-10 relative clipping text-white p-6" style={{ background: 'linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(219, 167, 107, 1) 50%)' }}>
                     <h3 className=''>Hotel Galaxy</h3>
                     <h2>Premium hotel in Prayagraj</h2>
                     <h1>We welcome you in our prestigious Hotel</h1>
@@ -391,8 +391,12 @@ const Home = () => {
 
             {/* BOOKING FORM  */}
 
-            <div className="w-full h-auto md:h-96 lg:p-24 bg-cover bg-center bg-no-repeat bg-[url('')] flex flex-col lg:flex-row md:flex-row justify-center items-center gap-4 p-4 bg-cyan-400">
-                <div className=" w-full sm:w-full md:w-full lg:w-2/4 xl:w-2/4 h-80 flex flex-col justify-evenly sm:p-0 md:p-4 lg:p-6 xl:p-6 ">
+            <div className="w-full h-auto md:h-[510px] lg:p-24 bg-cover bg-center bg-no-repeat flex flex-col lg:flex-row md:flex-row justify-center items-center gap-4 p-4" 
+            // style={{
+            //     backgroundImage: "url('../../src/assets/images/img.jpeg')",
+            // }}
+            >
+                <div className=" w-full sm:w-full md:w-full lg:w-2/4 xl:w-2/4 h-72 flex flex-col justify-evenly sm:p-0 md:p-4 lg:p-6 xl:p-6 ">
                     <div className="">
                         <div className=' flex flex-row text-primary-color '><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/></div>
                         <p className=' text-3xl text-primary-color'>Feel free to Call us anytime!</p>
@@ -409,7 +413,7 @@ const Home = () => {
                     </div>
                     
                 </div>
-                <div className="w-full sm:w-full md:w-full lg:w-2/4 xl:w-2/4 flex flex-row flex-wrap justify-center items-center bg-secondory-color h-60">
+                <div className="w-full sm:w-full md:w-full lg:w-2/4 xl:w-2/4 h-72 flex flex-row flex-wrap justify-center items-center bg-secondory-color ">
                         
                     <div className=" w-28 flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm bg-pale-yellow">Check-in
                         <input className=" bg-transparent border border-gray-300" type="date" />
