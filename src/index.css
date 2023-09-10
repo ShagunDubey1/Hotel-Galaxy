@@ -52,6 +52,7 @@ body {
     z-index: 100;
 }
 
+
 .clipping{
     clip-path: polygon(0 0, 73% 0, 86% 100%, 0% 100%);
 }
