@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+const withMT = require("@material-tailwind/react/utils/withMT");
+
+export default  withMT({
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
         extend: {
@@ -7,7 +9,7 @@ export default {
                 "primary-color": "#dba765",
                 "secondory-color": "#F8F5F0",
                 "pale-yellow": "#F6F4EB",
-                "filter": "rgba(0, 0, 0, 0.7)",
+                filter: "rgba(0, 0, 0, 0.7)",
                 "card-filter": "#323232E6",
                 heading: {
                     dark: "#000000",
@@ -19,7 +21,6 @@ export default {
                     "3rem",
                     {
                         lineHeight: "2rem",
-                        // letterSpacing: "-0.01em",
                         fontWeight: "700",
                     },
                 ],
@@ -27,7 +28,6 @@ export default {
                     "1.75rem",
                     {
                         lineHeight: "1rem",
-                        // letterSpacing: "-0.02em",
                         fontWeight: "600",
                     },
                 ],
@@ -35,7 +35,6 @@ export default {
                     "1.1rem",
                     {
                         lineHeight: "1rem",
-                        // letterSpacing: "0.125em",
                         fontWeight: "400",
                     },
                 ],
@@ -43,7 +42,6 @@ export default {
                     "1.125rem",
                     {
                         lineHeight: "1.625rem",
-                        // letterSpacing: "0.125em",
                         fontWeight: "400",
                     },
                 ],
@@ -52,4 +50,5 @@ export default {
         },
     },
     plugins: [],
-};
+    darkMode: "class",
+});

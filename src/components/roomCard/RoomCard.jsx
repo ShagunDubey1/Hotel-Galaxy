@@ -41,7 +41,7 @@ const RoomCard = ({ roomType, price, brief, description, bgImg }) => {
             >
                 <div className=" bg-card-filter absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed flex justify-center items-center flex-col ">
                     <div className=" px-8">
-                        <h3 className=" capitalize text-h2 mb-4 text-white font-['Josefin_Sans']">
+                        <h3 className=" capitalize text-h2 mb-4 text-white font-['Josefin_Sans'] leading-8">
                             {roomType}
                         </h3>
                         <p className=" text-p text-white font-['Josefin_Sans'] font-normal mb-8">
