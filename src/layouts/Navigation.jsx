@@ -66,24 +66,24 @@ const Navigation = () => {
                     {/* ===================navigation bar================================= */}
                     <div className=" hidden md:flex justify-center items-center gap-8 ">
                         <ul className=" text-white flex justify-center items-center gap-5 text-xl font-semibold font-['Josefin_Sans'] cursor-pointer">
-                            <li>
+                            <li className=" hover:text-primary-color">
                                 <NavLink to="/">Home</NavLink>
                             </li>
-                            <li>
+                            <li className=" hover:text-primary-color">
                                 <NavLink to="/about">About</NavLink>
                             </li>
-                            <li>
+                            <li className=" hover:text-primary-color">
                                 <NavLink to="/rooms">Rooms</NavLink>
                             </li>
-                            <li>
+                            <li className=" hover:text-primary-color">
                                 <NavLink to="/gallery">Gallery</NavLink>
                             </li>
-                            <li>
+                            <li className=" hover:text-primary-color">
                                 <NavLink to="/events">
                                     Meetings & Events
                                 </NavLink>
                             </li>
-                            <li>
+                            <li className=" hover:text-primary-color">
                                 <NavLink to="/contact"> Contact</NavLink>
                             </li>
                         </ul>
