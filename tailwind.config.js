@@ -10,6 +10,7 @@ export default  withMT({
                 "secondory-color": "#F8F5F0",
                 "pale-yellow": "#F6F4EB",
                 filter: "rgba(0, 0, 0, 0.7)",
+                filter2: "rgba(0,0,0,0.3)",
                 "card-filter": "#323232E6",
                 heading: {
                     dark: "#000000",
