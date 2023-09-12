@@ -68,7 +68,7 @@ const Navigation = () => {
                             <li>Home</li>
                             <li>About</li>
                             <li>Rooms</li>
-                            <li>Dining</li>
+                            <li>Gallery</li>
                             <li>Meetings & Events</li>
                             <li>Contact</li>
                         </ul>
@@ -81,7 +81,7 @@ const Navigation = () => {
             </header>
             {/* =================toggle navigation bar===================== */}
             {showNavbar && (
-                <div className=" relative w-full bg-white z-20">
+                <div className=" fixed w-full bg-white z-20">
                     <ul className=" w-full flex flex-col justify-center items-start text-lg  font-semibold font-['Josefin_Sans'] cursor-pointer z-40">
                         <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
                             Home
@@ -93,7 +93,7 @@ const Navigation = () => {
                             Rooms
                         </li>
                         <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
-                            Dining
+                            Gallery
                         </li>
                         <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
                             Meetings & Events
