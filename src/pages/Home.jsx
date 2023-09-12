@@ -25,15 +25,17 @@ import {
 
 // Importing Images
 import room1 from "../assets/Images/room1.jpeg";
-import room2 from "../assets/Images/room2.jpeg";
+// import room2 from "../assets/Images/room2.jpeg";
 import room3 from "../assets/Images/room3.jpeg";
 import eventHall from "../assets/Images/eventHall.jpeg";
 import image1 from "../assets/Images/img.jpeg";
 import bath from "../assets/Images/bath.jpeg";
 import logo from "../assets/logo.png";
 import frontView from "../assets/Images/frontView.jpeg";
+import bg from "../assets/bg.mp4"
 
 import { useState } from "react";
+import { BookNowBtn } from "../components/BookNowBtn";
 
 // ABOUT US SECTION
 
@@ -570,7 +572,7 @@ const Home = () => {
 
             {/*   ABOUT US */}
 
-            <section className=" relative w-full flex flex-col items-center justify-center pt-24">
+            <section className=" relative w-full flex flex-col items-center justify-center py-24">
                 <div className="flex flex-col md:flex-row lg:flex-row justify-end  flex-wrap lg:m-14 md:m-10 max-w-[1140px]">
                     <div className=" lg:w-1/2 w-[50%] group flex justify-center">
                         <div className="lg:w-96 lg:h-64 md:w-64 md:h-44 mb-4 mr-4 border-2 border-black absolute transition-transform transform group-hover:translate-x-4 group-hover:translate-y-4"></div>
@@ -588,7 +590,7 @@ const Home = () => {
             </section>
             {/* URBAN SPACE */}
 
-            <div className="relative w-full h-64">
+            <div className="relative w-full h-[35rem]">
                 <video
                     autoPlay
                     loop
@@ -597,18 +599,18 @@ const Home = () => {
                     className="absolute inset-0 object-cover w-full h-full"
                 >
                     <source
-                        src="https:\/\/www.youtube.com\/watch?v=zr4r3n5Smho&quot"
+                        src={bg}
                         type="video/mp4"
                     />
                 </video>
-                <div className="absolute inset-0 flex flex-col justify-evenly items-center ">
-                    <div className=" text-primary-color">Hotel Galaxy</div>
-                    <div className=" text-3xl text-center">
+                <div className="absolute inset-0 flex flex-col justify-center items-center bg-filter2 px-8">
+                    <div className=" text-primary-color text-lg">Hotel Galaxy</div>
+                    <div className=" text-3xl text-center my-4">
+                    <h2 className=" text-white text-h1 mb-12">
                         A Warm, Exquisite, Practical and Urban Space
+                    </h2>
                     </div>
-                    <button className=" w-28 bg-primary-color py-3 text-white text-md uppercase hover:bg-white hover:border hover:text-primary-color transition-all duration-200 ease-in-out tracking-wide lg:block">
-                        Book now
-                    </button>
+                    <BookNowBtn />
                 </div>
             </div>
 
