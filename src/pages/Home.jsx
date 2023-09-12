@@ -598,17 +598,16 @@ const Home = () => {
                     playsInline
                     className="absolute inset-0 object-cover w-full h-full"
                 >
-                    <source
-                        src={bg}
-                        type="video/mp4"
-                    />
+                    <source src={bg} type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 flex flex-col justify-center items-center bg-filter2 px-8">
-                    <div className=" text-primary-color text-lg">Hotel Galaxy</div>
+                    <div className=" text-primary-color text-lg">
+                        Hotel Galaxy
+                    </div>
                     <div className=" text-3xl text-center my-4">
-                    <h2 className=" text-white text-h1 mb-12">
-                        A Warm, Exquisite, Practical and Urban Space
-                    </h2>
+                        <h2 className=" text-white text-h1 mb-12">
+                            A Warm, Exquisite, Practical and Urban Space
+                        </h2>
                     </div>
                     <BookNowBtn />
                 </div>
@@ -616,112 +615,112 @@ const Home = () => {
 
             {/* BOOKING FORM  */}
 
-            <div
-                className="w-full h-auto md:h-[510px] lg:p-24 bg-cover bg-center bg-no-repeat flex flex-col lg:flex-row md:flex-row justify-center items-center gap-4 p-4"
-                // style={{
-                //     backgroundImage: "url('../../src/assets/images/img.jpeg')",
-                // }}
-            >
-                <div className=" w-full sm:w-full md:w-full lg:w-2/4 xl:w-2/4 h-72 flex flex-col justify-evenly sm:p-0 md:p-4 lg:p-6 xl:p-6 ">
-                    <div className="">
-                        <div className=" flex flex-row text-primary-color ">
-                            <AiFillStar />
-                            <AiFillStar />
-                            <AiFillStar />
-                            <AiFillStar />
-                        </div>
-                        <p className=" text-3xl text-primary-color">
-                            Feel free to Call us anytime!
-                        </p>
-                    </div>
-
-                    <p>
-                        Each of our guest rooms feature a private bath, wi-fi,
-                        cable television and include full breakfast.
-                    </p>
-
-                    <div className=" flex flex-row flex-wrap items-center gap-4">
-                        <span>
-                            <RiCustomerService2Fill className="w-12 h-20" />
-                        </span>
+            <section className=" relative w-full flex flex-col items-center justify-center pt-24">
+                <div className="w-full h-auto md:h-[510px] lg:p-24 bg-cover bg-center bg-no-repeat flex flex-col lg:flex-row md:flex-row justify-center items-center gap-4 p-4 max-w-[1140px]">
+                    <div className=" w-full  lg:w-2/4 xl:w-2/4 h-72 flex flex-col justify-evenly sm:p-0 md:p-4 lg:p-6 xl:p-6 ">
                         <div className="">
-                            <p className=" flex flex-row font-sans text-sm items-center gap-1">
-                                <BiPhoneCall /> +91-9918901686 ||{" "}
-                                <GiRotaryPhone />
-                                0532-2400507{" "}
+                            <div className=" flex flex-row text-primary-color ">
+                                <AiFillStar />
+                                <AiFillStar />
+                                <AiFillStar />
+                                <AiFillStar />
+                            </div>
+                            <p className=" text-3xl text-primary-color">
+                                Feel free to Call us anytime!
                             </p>
-                            <p>For more information</p>
+                        </div>
+
+                        <p>
+                            Each of our guest rooms feature a private bath,
+                            wi-fi, cable television and include full breakfast.
+                        </p>
+
+                        <div className=" flex flex-row flex-wrap items-center gap-4">
+                            <span>
+                                <RiCustomerService2Fill className="w-12 h-20" />
+                            </span>
+                            <div className="">
+                                <p className=" flex flex-row font-sans text-sm items-center gap-1">
+                                    <BiPhoneCall /> +91-9918901686 ||{" "}
+                                    <GiRotaryPhone />
+                                    0532-2400507{" "}
+                                </p>
+                                <p>For more information</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full lg:w-[60%]  flex flex-col flex-wrap justify-center items-center bg-secondory-color py-8">
+                        <div className=" flex w-full justify-center items-center gap-6">
+                            <div className=" w-[30%] flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm bg-pale-yellow">
+                                Check-in
+                                <input
+                                    className=" bg-transparent border border-gray-300 p-4"
+                                    type="date"
+                                />
+                            </div>
+                            <div className="w-[30%]  flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm ">
+                                Check-out
+                                <input
+                                    className=" bg-transparent border  border-gray-300 p-4"
+                                    type="date"
+                                />
+                            </div>
+                        </div>
+                        <div className=" flex w-full justify-center items-center gap-6">
+                            <div className=" w-[30%] flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm">
+                                Adult
+                                <select
+                                    className="bg-transparent border border-gray-300 p-4"
+                                    name="check-in"
+                                    id=""
+                                >
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="1">3</option>
+                                    <option value="2">4</option>
+                                    <option value="1">5</option>
+                                    <option value="2">6</option>
+                                </select>
+                            </div>
+                            <div className=" w-[30%] flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm">
+                                Children
+                                <select
+                                    className=" bg-transparent border border-gray-300 p-4"
+                                    name="check-in"
+                                    id=""
+                                >
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="1">3</option>
+                                    <option value="2">4</option>
+                                    <option value="1">5</option>
+                                    <option value="2">6</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div className=" flex w-full justify-center items-center gap-6">
+                            <div className=" w-[30%] flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm">
+                                Rooms
+                                <select
+                                    className=" bg-transparent border border-gray-300 p-4"
+                                    name="check-in"
+                                    id=""
+                                >
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="1">3</option>
+                                    <option value="2">4</option>
+                                    <option value="1">5</option>
+                                    <option value="2">6</option>
+                                </select>
+                            </div>
+                            <div className=" w-[30%] flex justify-end flex-col p-4 md:p-2 sm:p-1 text-sm">
+                                <BookNowBtn />
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="w-full sm:w-full md:w-full lg:w-2/4 xl:w-2/4 h-72 flex flex-row flex-wrap justify-center items-center bg-secondory-color ">
-                    <div className=" w-28 flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm bg-pale-yellow">
-                        Check-in
-                        <input
-                            className=" bg-transparent border border-gray-300"
-                            type="date"
-                        />
-                    </div>
-                    <div className=" w-28 flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm ">
-                        Check-out
-                        <input
-                            className=" bg-transparent border  border-gray-300"
-                            type="date"
-                        />
-                    </div>
-                    <div className=" w-28 flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm">
-                        Adult
-                        <select
-                            className=" bg-transparent border border-gray-300"
-                            name="check-in"
-                            id=""
-                        >
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="1">3</option>
-                            <option value="2">4</option>
-                            <option value="1">5</option>
-                            <option value="2">6</option>
-                        </select>
-                    </div>
-                    <div className=" w-28 flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm">
-                        Children
-                        <select
-                            className=" bg-transparent border border-gray-300"
-                            name="check-in"
-                            id=""
-                        >
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="1">3</option>
-                            <option value="2">4</option>
-                            <option value="1">5</option>
-                            <option value="2">6</option>
-                        </select>
-                    </div>
-                    <div className=" w-28 flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm">
-                        Rooms
-                        <select
-                            className=" bg-transparent border border-gray-300"
-                            name="check-in"
-                            id=""
-                        >
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="1">3</option>
-                            <option value="2">4</option>
-                            <option value="1">5</option>
-                            <option value="2">6</option>
-                        </select>
-                    </div>
-                    <div className=" w-28 flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm">
-                        {/* <button className="h-8 w-full bg-orange-400 border-2 border-gray-300 transition duration-300 ease-in-out group hover:bg-gray-200 hover:border-orange-400">Book now</button> */}
-                        <button className=" bg-primary-color py-3 text-white text-md uppercase hover:bg-white hover:text-primary-color transition-all duration-200 ease-in-out tracking-wide lg:block">
-                            Book now
-                        </button>
-                    </div>
-                </div>
-            </div>
+            </section>
 
             <Event />
         </>
