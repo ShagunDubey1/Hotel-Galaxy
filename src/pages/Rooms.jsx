@@ -1,5 +1,7 @@
 import HeroWrapper from "../components/HeroWrapper";
 import RoomCard from "../components/roomCard/RoomCard";
+import room1 from "../assets/Images/room1.jpeg";
+import room2 from "../assets/Images/room2.jpeg"
 
 const CardWrapper = () => {
     const roomsDetails = [
@@ -8,7 +10,7 @@ const CardWrapper = () => {
             roomType: "Deluxe Double Rooms",
             price: "599",
             brief: "38m2/2 beds/1 bathroom",
-            bgImg: "url('../../src/assets/images/room2.jpeg')",
+            bgImg: `url(${room2})`,
             description:
                 "Architecture viverra tristique ustoni an missten vitae diam   neque nivamus the aestan the atene artines arinianu ateli ine finibus viverra neclacus.",
         },
@@ -17,7 +19,7 @@ const CardWrapper = () => {
             roomType: "Double Room",
             price: "499",
             brief: "38m2/2 beds/1 bathroom",
-            bgImg: "url('../../src/assets/images/room1.jpeg')",
+            bgImg: `url(${room1})`,
             description:
                 "Architecture viverra tristique ustoni an missten vitae diam   neque nivamus the aestan the atene artines arinianu ateli ine finibus viverra neclacus.",
         },
@@ -26,7 +28,7 @@ const CardWrapper = () => {
             roomType: "Superior Rooms",
             price: "599",
             brief: "38m2/2 beds/1 bathroom",
-            bgImg: "url('../../src/assets/images/room2.jpeg')",
+            bgImg: `url(${room2})`,
             description:
                 "Architecture viverra tristique ustoni an missten vitae diam   neque nivamus the aestan the atene artines arinianu ateli ine finibus viverra neclacus.",
         },
@@ -35,7 +37,7 @@ const CardWrapper = () => {
             roomType: "Deluxe Double Rooms",
             price: "599",
             brief: "38m2/2 beds/1 bathroom",
-            bgImg: "url('../../src/assets/images/room2.jpeg')",
+            bgImg: `url(${room1})`,
             description:
                 "Architecture viverra tristique ustoni an missten vitae diam   neque nivamus the aestan the atene artines arinianu ateli ine finibus viverra neclacus.",
         },
@@ -44,7 +46,7 @@ const CardWrapper = () => {
             roomType: "Double Room",
             price: "499",
             brief: "38m2/2 beds/1 bathroom",
-            bgImg: "url('../../src/assets/images/room2.jpeg')",
+            bgImg: `url(${room2})`,
             description:
                 "Architecture viverra tristique ustoni an missten vitae diam   neque nivamus the aestan the atene artines arinianu ateli ine finibus viverra neclacus.",
         },
@@ -53,7 +55,7 @@ const CardWrapper = () => {
             roomType: "Superior Rooms",
             price: "599",
             brief: "38m2/2 beds/1 bathroom",
-            bgImg: "url('../../src/assets/images/room2.jpeg')",
+            bgImg: `url(${room1})`,
             description:
                 "Architecture viverra tristique ustoni an missten vitae diam   neque nivamus the aestan the atene artines arinianu ateli ine finibus viverra neclacus.",
         },
