@@ -1,5 +1,6 @@
-import { useState,useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
+import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
     const [showNavbar, setShowNavbar] = useState(false);
@@ -65,12 +66,26 @@ const Navigation = () => {
                     {/* ===================navigation bar================================= */}
                     <div className=" hidden md:flex justify-center items-center gap-8 ">
                         <ul className=" text-white flex justify-center items-center gap-5 text-xl font-semibold font-['Josefin_Sans'] cursor-pointer">
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Rooms</li>
-                            <li>Gallery</li>
-                            <li>Meetings & Events</li>
-                            <li>Contact</li>
+                            <li>
+                                <NavLink to="/">Home</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/about">About</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/rooms">Rooms</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/gallery">Gallery</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/events">
+                                    Meetings & Events
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/contact"> Contact</NavLink>
+                            </li>
                         </ul>
                         <button className=" hidden bg-primary-color px-6 py-3 text-white text-md uppercase hover:bg-white hover:text-primary-color transition-all duration-200 ease-in-out tracking-wide lg:block">
                             Book Now
@@ -84,22 +99,22 @@ const Navigation = () => {
                 <div className=" fixed w-full bg-white z-20">
                     <ul className=" w-full flex flex-col justify-center items-start text-lg  font-semibold font-['Josefin_Sans'] cursor-pointer z-40">
                         <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
-                            Home
+                            <NavLink to="/">Home</NavLink>
                         </li>
                         <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
-                            About
+                            <NavLink to="/about">About</NavLink>
                         </li>
                         <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
-                            Rooms
+                            <NavLink to="/rooms">Rooms</NavLink>
                         </li>
                         <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
-                            Gallery
+                            <NavLink to="/gallery">Gallery</NavLink>
                         </li>
                         <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
                             Meetings & Events
                         </li>
                         <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
-                            Contact
+                            <NavLink to="/contact"> Contact</NavLink>
                         </li>
                     </ul>
                 </div>

@@ -484,7 +484,7 @@ const Home = () => {
                         <img
                             src={bath}
                             alt="photo"
-                            className=" w-52 h-72  mt-10"
+                            className=" w-56 h-72  mt-10"
                         />
                     </div>
                     <div className=" w-[60%] h-auto lg:w-1/2 flex flex-col flex-wrap justify-between lg:p-4 item-center lg:items-start  m-5 sm:m-0">
