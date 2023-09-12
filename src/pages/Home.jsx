@@ -1,12 +1,13 @@
 import { Carousel, Typography, Button } from "@material-tailwind/react";
 // Importing icons
-import { FcManager } from "react-icons/fc";
+import { HiUser, HiBell } from "react-icons/hi";
 import { GiRotaryPhone } from "react-icons/gi";
 import { BsAlarm, BsKey } from "react-icons/BS";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { MdOutlineLocalLaundryService } from "react-icons/md";
-import { GrUserManager, GrRestroomWomen } from "react-icons/gr";
+import { MdRoomService } from "react-icons/md";
 import { BiMap, BiHomeAlt2, BiPhoneCall } from "react-icons/bi";
+import { FaFemale } from "react-icons/fa";
 import {
     FaBriefcaseMedical,
     FaHandsHelping,
@@ -29,6 +30,7 @@ import eventHall from "../assets/Images/eventHall.jpeg";
 import image1 from "../assets/Images/img.jpeg";
 import bath from "../assets/Images/bath.jpeg";
 import logo from "../assets/logo.png";
+import frontView from "../assets/Images/frontView.jpeg"
 
 import { useState } from "react";
 
@@ -109,6 +111,8 @@ const TabbedContent = () => {
     );
 };
 
+
+
 // NEWS AND POSTS
 
 const Event = () => {
@@ -131,159 +135,195 @@ const Event = () => {
     );
 };
 
+//hero wrapper
+
+const HeroWrapper = () => {
+    return (
+        <Carousel
+            autoplay={true}
+            loop={true}
+            autoplayDela={1000}
+            className=" w-full h-screen"
+        >
+            <div className="relative h-full w-full">
+                <img src={eventHall} className="h-full w-full object-cover" />
+                <div className="absolute inset-0 grid h-full w-full place-items-center bg-filter">
+                    <div className="w-3/4 text-center md:w-2/4">
+                        <Typography
+                            variant="p"
+                            className=" text-primary-color text-lg  tracking-widest uppercase"
+                        >
+                            This is Luxury Hotel
+                        </Typography>
+                        <Typography
+                            variant="h1"
+                            color="white"
+                            className="mb-4 text-3xl md:text-4xl lg:text-6xl font-[Cormorant_Garamond] text-white"
+                        >
+                            HOTEL GALAXY
+                        </Typography>
+                        <ul className=" h-[0.05rem] bg-primary-color w-full mb-4"></ul>
+                        <Typography
+                            variant="lead"
+                            color="white"
+                            className="mb-12 opacity-80 font-[Josefin_Sans] text-2xl"
+                        >
+                            Experience unparalleled luxury and comfort at our
+                            exquisite hotel, where every moment becomes a
+                            cherished memory
+                        </Typography>
+                        <div className="flex justify-center gap-2">
+                            <Button
+                                size="lg"
+                                color="white"
+                                className=" rounded-none bg-primary-color px-6 py-3 text-white text-md uppercase hover:bg-white hover:text-primary-color transition-all duration-200 ease-in-out tracking-wide"
+                            >
+                                Book Now
+                            </Button>
+                            <Button
+                                size="lg"
+                                color="white"
+                                variant="text"
+                                className=" rounded-none"
+                            >
+                                Contact Us
+                            </Button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="relative h-full w-full">
+                <img
+                    src={image1}
+                    alt="image 2"
+                    className="h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 grid h-full w-full place-items-center bg-filter">
+                    <div className="w-3/4 text-center md:w-2/4">
+                        <Typography
+                            variant="p"
+                            className=" text-primary-color text-lg  tracking-widest uppercase"
+                        >
+                            This is Luxury Hotel
+                        </Typography>
+                        <Typography
+                            variant="h1"
+                            color="white"
+                            className="mb-4 text-3xl md:text-4xl lg:text-6xl font-[Cormorant_Garamond] text-white"
+                        >
+                            SUPERIOR HOTEL IN PRAYAGRAJ
+                        </Typography>
+                        <ul className=" h-[0.05rem] bg-primary-color w-full mb-4"></ul>
+                        <Typography
+                            variant="lead"
+                            color="white"
+                            className="mb-12 opacity-80 font-[Josefin_Sans] text-2xl"
+                        >
+                            Experience unparalleled luxury and comfort at our
+                            exquisite hotel, where every moment becomes a
+                            cherished memory
+                        </Typography>
+                        <div className="flex justify-center gap-2">
+                            <Button
+                                size="lg"
+                                color="white"
+                                className=" rounded-none bg-primary-color px-6 py-3 text-white text-md uppercase hover:bg-white hover:text-primary-color transition-all duration-200 ease-in-out tracking-wide"
+                            >
+                                Book Now
+                            </Button>
+                            <Button
+                                size="lg"
+                                color="white"
+                                variant="text"
+                                className=" rounded-none"
+                            >
+                                Contact Us
+                            </Button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="relative h-full w-full">
+                <img
+                    src={frontView}
+                    alt="image 3"
+                    className="h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 grid h-full w-full place-items-center bg-filter">
+                    <div className="w-3/4 text-center md:w-2/4">
+                        <Typography
+                            variant="p"
+                            className=" text-primary-color text-lg  tracking-widest uppercase"
+                        >
+                            This is Luxury Hotel
+                        </Typography>
+                        <Typography
+                            variant="h1"
+                            color="white"
+                            className="mb-4 text-3xl md:text-4xl lg:text-6xl font-[Cormorant_Garamond] text-white uppercase"
+                        >
+                            Premier Accommodation in Prayagraj
+                        </Typography>
+                        <ul className=" h-[0.05rem] bg-primary-color w-full mb-4"></ul>
+                        <Typography
+                            variant="lead"
+                            color="white"
+                            className="mb-12 opacity-80 font-[Josefin_Sans] text-2xl"
+                        >
+                            Experience unparalleled luxury and comfort at our
+                            exquisite hotel, where every moment becomes a
+                            cherished memory
+                        </Typography>
+                        <div className="flex justify-center gap-2">
+                            <Button
+                                size="lg"
+                                color="white"
+                                className=" rounded-none bg-primary-color px-6 py-3 text-white text-md uppercase hover:bg-white hover:text-primary-color transition-all duration-200 ease-in-out tracking-wide"
+                            >
+                                Book Now
+                            </Button>
+                            <Button
+                                size="lg"
+                                color="white"
+                                variant="text"
+                                className=" rounded-none"
+                            >
+                                Contact Us
+                            </Button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </Carousel>
+    );
+}
+
 // MAIN CONTENT OF THE PAGE
 
 const Home = () => {
     return (
         <>
-            {/* <div className="w-full h-screen bg-cover bg-center bg-no-repeat bg-[url('https://images.pexels.com/photos/5868075/pexels-photo-5868075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] flex justify-center items-center text-center text-white flex-col relative">
-                <div className="font-fnt text-5xl">
-                    <p className=" font-extrabold">
-                        SUPERIOR HOTEL IN PRAYAGRAJ
-                    </p>
-                </div>
-                <div className=" font-bold">
-                    Luxury & Lifestyle That is rare, Premium & Top of the World
-                </div>
-            </div> */}
-            <Carousel
-                autoplay={true}
-                loop={true}
-                autoplayDela={1000}
-                className=" w-full h-screen"
-            >
-                <div className="relative h-full w-full">
-                    <img
-                        src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
-                        alt="image 1"
-                        className="h-full w-full object-cover"
-                    />
-                    <div className="absolute inset-0 grid h-full w-full place-items-center bg-filter">
-                        <div className="w-3/4 text-center md:w-2/4">
-                            <Typography
-                                variant="h1"
-                                color="white"
-                                className="mb-4 text-3xl md:text-4xl lg:text-5xl"
-                            >
-                                The Beauty of Nature
-                            </Typography>
-                            <Typography
-                                variant="lead"
-                                color="white"
-                                className="mb-12 opacity-80"
-                            >
-                                It is not so much for its beauty that the forest
-                                makes a claim upon men&apos;s hearts, as for
-                                that subtle something, that quality of air that
-                                emanation from old trees, that so wonderfully
-                                changes and renews a weary spirit.
-                            </Typography>
-                            <div className="flex justify-center gap-2">
-                                <Button size="lg" color="white">
-                                    Explore
-                                </Button>
-                                <Button size="lg" color="white" variant="text">
-                                    Gallery
-                                </Button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative h-full w-full">
-                    <img
-                        src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-                        alt="image 2"
-                        className="h-full w-full object-cover"
-                    />
-                    <div className="absolute inset-0 grid h-full w-full place-items-center bg-filter">
-                        <div className="w-3/4 text-center md:w-2/4">
-                            <Typography
-                                variant="h1"
-                                color="white"
-                                className="mb-4 text-3xl md:text-4xl lg:text-5xl"
-                            >
-                                The Beauty of Nature
-                            </Typography>
-                            <Typography
-                                variant="lead"
-                                color="white"
-                                className="mb-12 opacity-80"
-                            >
-                                It is not so much for its beauty that the forest
-                                makes a claim upon men&apos;s hearts, as for
-                                that subtle something, that quality of air that
-                                emanation from old trees, that so wonderfully
-                                changes and renews a weary spirit.
-                            </Typography>
-                            <div className="flex justify-center gap-2">
-                                <Button size="lg" color="white">
-                                    Explore
-                                </Button>
-                                <Button size="lg" color="white" variant="text">
-                                    Gallery
-                                </Button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative h-full w-full">
-                    <img
-                        src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
-                        alt="image 3"
-                        className="h-full w-full object-cover"
-                    />
-                    <div className="absolute inset-0 grid h-full w-full place-items-center bg-filter">
-                        <div className="w-3/4 text-center md:w-2/4">
-                            <Typography
-                                variant="h1"
-                                color="white"
-                                className="mb-4 text-3xl md:text-4xl lg:text-5xl"
-                            >
-                                The Beauty of Nature
-                            </Typography>
-                            <Typography
-                                variant="lead"
-                                color="white"
-                                className="mb-12 opacity-80"
-                            >
-                                It is not so much for its beauty that the forest
-                                makes a claim upon men&apos;s hearts, as for
-                                that subtle something, that quality of air that
-                                emanation from old trees, that so wonderfully
-                                changes and renews a weary spirit.
-                            </Typography>
-                            <div className="flex justify-center gap-2">
-                                <Button size="lg" color="white" className=" rounded-none">
-                                    Explore
-                                </Button>
-                                <Button size="lg" color="white" variant="text">
-                                    Gallery
-                                </Button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </Carousel>
+            <HeroWrapper />
 
-            <div className="lg:h-28 md:h-auto m-auto bg-pale-yellow w-5/6  -mt-14 transform  flex flex-row flex-wrap justify-evenly items-center">
+            <div className="lg:h-28 md:h-auto m-auto bg-pale-yellow w-[70%]  -mt-14 transform  flex flex-row flex-wrap justify-evenly items-center">
                 <div className=" w-28 h-24 flex flex-col justify-evenly p-4 md:p-2 sm:p-2 text-sm">
                     <p>Check-in</p>
                     <input
-                        className=" bg-transparent border border-gray-300"
+                        className=" bg-transparent border border-gray-300 p-2"
                         type="date"
                     />
                 </div>
                 <div className=" w-28 h-24 flex flex-col justify-evenly p-4 md:p-2 sm:p-1 text-sm ">
                     <p>Check-out</p>
                     <input
-                        className=" bg-transparent border  border-gray-300"
+                        className=" bg-transparent border  border-gray-300 p-2"
                         type="date"
                     />
                 </div>
                 <div className=" w-28 h-24 flex flex-col justify-evenly p-4 md:p-2 sm:p-1 text-sm">
                     <p>Adult</p>
                     <select
-                        className=" bg-transparent border border-gray-300"
+                        className=" bg-transparent border border-gray-300 p-2"
                         name="check-in"
                         id=""
                     >
@@ -298,7 +338,7 @@ const Home = () => {
                 <div className=" w-28 h-24 flex flex-col justify-evenly p-4 md:p-2 sm:p-1 text-sm">
                     <p>Children</p>
                     <select
-                        className=" bg-transparent border border-gray-300"
+                        className=" bg-transparent border border-gray-300 p-2"
                         name="check-in"
                         id=""
                     >
@@ -313,7 +353,7 @@ const Home = () => {
                 <div className=" w-28 h-24 flex flex-col justify-evenly p-4 md:p-2 sm:p-1 text-sm">
                     <p>Rooms</p>
                     <select
-                        className=" bg-transparent border border-gray-300"
+                        className=" bg-transparent border border-gray-300 p-2"
                         name="check-in"
                         id=""
                     >
@@ -326,7 +366,6 @@ const Home = () => {
                     </select>
                 </div>
                 <div className=" w-28 h-24 flex flex-col justify-evenly p-4 md:p-2 sm:p-1 text-sm">
-                    {/* <button className="h-8 w-full bg-orange-400  transition duration-300 ease-in-out group hover:bg-gray-200 hover:border-orange-400">Book now</button> */}
                     <button className=" bg-primary-color py-3 text-white text-md uppercase hover:bg-white hover:text-primary-color transition-all duration-200 ease-in-out tracking-wide lg:block">
                         Book now
                     </button>
@@ -334,136 +373,141 @@ const Home = () => {
             </div>
 
             {/* INFORMATION */}
-
-            <div className=" w-full h-auto flex lg:flex-row md:flex-col flex-wrap lg:gap-5 md:gap-10 justify-center items-center mt-20">
-                <div className=" w-56 h-52 md:h-72 text-sm flex flex-col flex-wrap justify-center items-center shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out text-center">
-                    <BiMap className=" h-20 w-8" />
-                    <div className="w-1/3 h-0.5 bg-primary-color mx-auto my-4"></div>
-                    <p className=" p-1">
-                        Our hotel is located in the downtown and not too far
-                        from airport and bus station so it is quite easy to find
-                        us wherever you come from.
-                    </p>
+            <section className=" relative w-full flex flex-col items-center justify-center pt-24">
+                <div className=" w-full h-auto flex lg:flex-row md:flex-col flex-wrap lg:gap-5 md:gap-10 justify-center items-center mt-20  max-w-[1140px]">
+                    <div className=" w-[30%] h-52 md:h-72 text-sm flex flex-col flex-wrap justify-center items-center shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out text-center px-4">
+                        <BiMap className=" h-20 w-8" />
+                        <div className="w-1/3 h-0.5 bg-primary-color mx-auto my-4"></div>
+                        <p className=" text-p text-center">
+                            Our hotel is located in the downtown and not too far
+                            from airport and bus station so it is quite easy to
+                            find us wherever you come from.
+                        </p>
+                    </div>
+                    <div className="w-[30%] h-52 md:h-72 text-sm flex flex-col flex-wrap justify-center items-center shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out text-center">
+                        <BiHomeAlt2 className=" h-20 w-8" />
+                        <div className="w-1/3 h-0.5 bg-primary-color mx-auto my-4"></div>
+                        <p className=" text-p text-center">
+                            Visit hotel provides high-quality accommodation
+                            services to clients that come to our city from all
+                            over the world throughout the year.
+                        </p>
+                    </div>
+                    <div className="w-[30%] h-52 md:h-72 text-sm flex flex-col flex-wrap justify-center items-center shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out text-center">
+                        <AiOutlineStar className=" h-20 w-8" />
+                        <div className="w-1/3 h-0.5 bg-primary-color mx-auto my-4"></div>
+                        <p className=" text-p text-center">
+                            With qualified and friendly staff and high level of
+                            comfort, we are sure you will have a great
+                            experience of staying at the Visit hotel.
+                        </p>
+                    </div>
                 </div>
-                <div className="w-56 h-52 md:h-72 text-sm flex flex-col flex-wrap justify-center items-center shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out text-center">
-                    <BiHomeAlt2 className=" h-20 w-8" />
-                    <div className="w-1/3 h-0.5 bg-primary-color mx-auto my-4"></div>
-                    <p className=" p-1">
-                        Visit hotel provides high-quality accommodation services
-                        to clients that come to our city from all over the world
-                        throughout the year.
-                    </p>
-                </div>
-                <div className="w-56 h-52 md:h-72 text-sm flex flex-col flex-wrap justify-center items-center shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out text-center">
-                    <AiOutlineStar className=" h-20 w-8" />
-                    <div className="w-1/3 h-0.5 bg-primary-color mx-auto my-4"></div>
-                    <p className=" p-1">
-                        With qualified and friendly staff and high level of
-                        comfort, we are sure you will have a great experience of
-                        staying at the Visit hotel.
-                    </p>
-                </div>
-            </div>
+            </section>
 
             {/* FEATURES  */}
-
-            <div className=" w-auto h-auto flex flex-col lg:flex-row flex-wrap justify-center mt-24 mx-20 md:mx-8 sm:mx-0">
-                <div className=" w-4/5 lg:w-1/2 flex flex-row justify-center gap-4">
-                    <img
-                        src={image1}
-                        alt="photo"
-                        className=" w-52 h-72  mb-10"
-                    />
-                    <img src={bath} alt="photo" className=" w-52 h-72  mt-10" />
+            <section className=" relative w-full flex flex-col items-center justify-center pt-24">
+                <div className=" w-auto h-auto flex flex-col lg:flex-row flex-wrap justify-center mt-24 mx-20 md:mx-8 sm:mx-0 max-w-[1140px]">
+                    <div className=" w-[40%] lg:w-1/2 flex flex-row justify-center gap-3">
+                        <img
+                            src={image1}
+                            alt="photo"
+                            className=" w-56 h-72  mb-10"
+                        />
+                        <img
+                            src={bath}
+                            alt="photo"
+                            className=" w-52 h-72  mt-10"
+                        />
+                    </div>
+                    <div className=" w-[60%] h-auto lg:w-1/2 flex flex-col flex-wrap justify-between lg:p-4 item-center lg:items-start  m-5 sm:m-0">
+                        <div className=" text-primary-color">Hotel Galaxy</div>
+                        <div className=" text-3xl">
+                            The right Apartment Hotel & Resort for you
+                        </div>
+                        <div className="colorful-div text-2xl font-bold p-2 flex flex-row justify-start w-full h-16">
+                            <div className=" ">
+                                <AiOutlineHome className=" w-10 h-10 text-primary-color" />
+                            </div>
+                            <div className="flex flex-col justify-start pl-4">
+                                <p className=" ">5 Star hotel in Prayagraj</p>
+                                <p className=" font-extrabold text-sm">
+                                    {" "}
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Unde, sit.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="colorful-div text-2xl font-bold p-2 flex flex-row justify-start w-full h-16">
+                            <div className=" ">
+                                <AiOutlineHome className=" w-10 h-10 text-primary-color" />
+                            </div>
+                            <div className="flex flex-col justify-start pl-4">
+                                <p className=" ">5 Star hotel in Prayagraj</p>
+                                <p className=" font-extrabold text-sm">
+                                    {" "}
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Unde, sit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className=" w-full h-auto lg:w-1/2 flex flex-col flex-wrap justify-between lg:p-4 item-center lg:items-start  m-5 sm:m-0">
-                    <div className=" text-primary-color">Hotel Galaxy</div>
-                    <div className=" text-3xl">
-                        The right Apartment Hotel & Resort for you
-                    </div>
-                    <div className="colorful-div text-2xl font-bold p-2 flex flex-row justify-start w-full h-16">
-                        <div className=" ">
-                            <AiOutlineHome className=" w-10 h-10 text-primary-color" />
-                        </div>
-                        <div className="flex flex-col justify-start pl-4">
-                            <p className=" ">5 Star hotel in Prayagraj</p>
-                            <p className=" font-extrabold text-sm">
-                                {" "}
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Unde, sit.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="colorful-div text-2xl font-bold p-2 flex flex-row justify-start w-full h-16">
-                        <div className=" ">
-                            <AiOutlineHome className=" w-10 h-10 text-primary-color" />
-                        </div>
-                        <div className="flex flex-col justify-start pl-4">
-                            <p className=" ">5 Star hotel in Prayagraj</p>
-                            <p className=" font-extrabold text-sm">
-                                {" "}
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Unde, sit.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            </section>
             {/* SERVICES */}
 
-            <div className=" md:mx-12 lg:mx-24 mt-16 flex justify-center flex-col items-center relative">
+            <div className=" md:mx-12 lg:mx-24 mt-16 flex justify-center flex-col items-center relative py-24">
                 <div className=" text-4xl font-extrabold text-center">
                     Our Services & Amenities
                 </div>
                 <div className="w-1/3 h-0.5 bg-primary-color mx-auto my-4"></div>
-                <div className="  w-full flex flex-row flex-wrap justify-around">
-                    <div className=" w-48 h-32 m-1 text-center flex justify-center flex-col items-center transition-transform duration-500 transform hover:scale-110">
+                <div className="  w-full flex flex-row flex-wrap justify-around py-12">
+                    <div className=" w-48 h-32 m-1 text-center flex justify-start flex-col items-center transition-transform duration-500 transform hover:scale-110">
                         <FaWifi className=" h-20 w-8 fill-primary-color hover:fill-blue-950 transition duration-500 ease-in-out" />
                         <p className=" font-bold">Free Internet Access</p>
                     </div>
-                    <div className=" w-48 h-32 m-1 text-center flex justify-center flex-col items-center transition-transform duration-500 transform hover:scale-110">
+                    <div className=" w-48 h-32 m-1 text-center flex justify-start flex-col items-center transition-transform duration-500 transform hover:scale-110">
                         <BsAlarm className=" h-20 w-8 fill-primary-color hover:fill-blue-950 transition duration-500 ease-in-out" />
                         <p className=" font-bold">Wake up call on request</p>
                     </div>
-                    <div className=" w-48 h-32 m-1 text-center flex justify-center flex-col items-center transition-transform duration-500 transform hover:scale-110">
-                        <FcManager className="h-20 w-8 fill-primary-color hover:fill-blue-950 transition duration-500 ease-in-out" />
+                    <div className=" w-48 h-32 m-1 text-center flex justify-start flex-col items-center transition-transform duration-500 transform hover:scale-110">
+                        <HiUser className="h-20 w-8 text-primary-color hover:fill-blue-950 transition duration-500 ease-in-out" />
                         <p>24 hours manager on duty</p>
                     </div>
-                    <div className=" w-48 h-32 m-1 text-center flex justify-center flex-col items-center transition-transform duration-500 transform hover:scale-110">
-                        <GrUserManager className=" h-20 w-8 text-primary-color " />
+                    <div className=" w-48 h-32 m-1 text-center flex justify-start flex-col items-center transition-transform duration-500 transform hover:scale-110">
+                        <HiBell className=" h-20 w-8 text-primary-color" />
                         <p>24 hours room service available</p>
                     </div>
-                    <div className=" w-48 h-32 m-1 text-center flex justify-center flex-col items-center transition-transform duration-500 transform hover:scale-110 ">
-                        <GrRestroomWomen className=" h-20 w-8 fill-primary-color " />
+                    <div className=" w-48 h-32 m-1 text-center flex justify-end flex-col items-center transition-transform duration-500 transform hover:scale-110 ">
+                        <FaFemale className=" h-8 w-8 fill-primary-color" />
                         <p>Women Experience Programme for female travelers</p>
                     </div>
-                    <div className=" w-48 h-32 m-1 text-center flex justify-center flex-col items-center transition-transform duration-500 transform hover:scale-110 ">
+                    <div className=" w-48 h-32 m-1 text-center flex justify-start flex-col items-center transition-transform duration-500 transform hover:scale-110 ">
                         <AiOutlineCar className=" h-20 w-8 fill-primary-color hover:fill-blue-950 transition duration-500 ease-in-out" />
                         <p>Self parking service</p>
                     </div>
-                    <div className=" w-48 h-32 m-1 text-center flex justify-center flex-col items-center transition-transform duration-500 transform hover:scale-110">
+                    <div className=" w-48 h-32 m-1 text-center flex justify-start flex-col items-center transition-transform duration-500 transform hover:scale-110">
                         <FaBriefcaseMedical className=" h-20 w-8 fill-primary-color hover:fill-blue-950 transition duration-500 ease-in-out" />
                         <p>24 hours doctor available</p>
                     </div>
-                    <div className=" w-48 h-32 m-1 text-center flex justify-center flex-col items-center transition-transform duration-500 transform hover:scale-110">
+                    <div className=" w-48 h-32 m-1 text-center flex justify-start flex-col items-center transition-transform duration-500 transform hover:scale-110">
                         <MdOutlineLocalLaundryService className=" h-20 w-8 fill-primary-color hover:fill-blue-950 transition duration-500 ease-in-out" />
                         <p>Laundry/Dry cleaning available</p>
                     </div>
-                    <div className=" w-48 h-32 m-1 text-center flex justify-center flex-col items-center transition-transform duration-500 transform hover:scale-110">
+                    <div className=" w-48 h-32 m-1 text-center flex justify-start flex-col items-center transition-transform duration-500 transform hover:scale-110">
                         <AiOutlineSafety className=" h-20 w-8 fill-primary-color hover:fill-blue-950 transition duration-500 ease-in-out" />
                         <p>Safe-deposite facilities</p>
                     </div>
-                    <div className=" w-48 h-32 m-1 text-center flex justify-center flex-col items-center transition-transform duration-500 transform hover:scale-110">
+                    <div className=" w-48 h-32 m-1 text-center flex justify-start flex-col items-center transition-transform duration-500 transform hover:scale-110">
                         <FaHandsHelping className=" h-20 w-8 fill-primary-color hover:fill-blue-950 transition duration-500 ease-in-out" />
                         <p>Daily turn down service</p>
                     </div>
 
-                    <div className=" w-48 h-32 m-1 text-center flex justify-center flex-col items-center transition-transform duration-500 transform hover:scale-110">
+                    <div className=" w-48 h-32 m-1 text-center flex justify-start flex-col items-center transition-transform duration-500 transform hover:scale-110">
                         <BsKey className=" h-20 w-8 fill-primary-color hover:fill-blue-950 transition duration-500 ease-in-out" />
                         <p>Digital Key</p>
                     </div>
-                    <div className=" w-48 h-32 m-1 text-center flex justify-center flex-col items-center transition-transform duration-500 transform hover:scale-110">
+                    <div className=" w-48 h-32 m-1 text-center flex justify-start flex-col items-center transition-transform duration-500 transform hover:scale-110">
                         <FaConciergeBell className=" h-20 w-8 fill-primary-color hover:fill-blue-950 transition duration-500 ease-in-out" />
                         <p>ConciergeBell</p>
                     </div>
@@ -528,24 +572,6 @@ const Home = () => {
                             <p className=" text-sm">Meeting space available</p>
                         </div>
                     </div>
-
-                    <div className=" w-60 h-64 relative transform-style-preserve-3d transition-all duration-800 ease-out">
-                        <>
-                            <div
-                                className="w-full h-full absolute top-0 left-0"
-                                style={{
-                                    background:
-                                        "linear-gradient(180deg, #00000080 0%, #DBA76BB3 100%)",
-                                }}
-                            ></div>
-                            <img className="h-full" src={room2} alt="Room" />
-                            <div className="absolute inset-0 flex flex-col pl-8 pb-8 justify-end text-white">
-                                <p className="text-lg font-semibold">Room</p>
-                                <p className=" text-sm">2 beds / bathroom</p>
-                            </div>
-                        </>
-                        <div></div>
-                    </div>
                 </div>
 
                 <div className=" text-lg items-center">
@@ -603,8 +629,13 @@ const Home = () => {
 
             {/* BOOKING FORM  */}
 
-            <div className="w-full h-auto md:h-96 lg:p-24 bg-cover bg-center bg-no-repeat bg-[url('')] flex flex-col lg:flex-row md:flex-row justify-center items-center gap-4 p-4 bg-cyan-400">
-                <div className=" w-full sm:w-full md:w-full lg:w-2/4 xl:w-2/4 h-80 flex flex-col justify-evenly sm:p-0 md:p-4 lg:p-6 xl:p-6 ">
+            <div
+                className="w-full h-auto md:h-[510px] lg:p-24 bg-cover bg-center bg-no-repeat flex flex-col lg:flex-row md:flex-row justify-center items-center gap-4 p-4"
+                // style={{
+                //     backgroundImage: "url('../../src/assets/images/img.jpeg')",
+                // }}
+            >
+                <div className=" w-full sm:w-full md:w-full lg:w-2/4 xl:w-2/4 h-72 flex flex-col justify-evenly sm:p-0 md:p-4 lg:p-6 xl:p-6 ">
                     <div className="">
                         <div className=" flex flex-row text-primary-color ">
                             <AiFillStar />
@@ -636,7 +667,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full sm:w-full md:w-full lg:w-2/4 xl:w-2/4 flex flex-row flex-wrap justify-center items-center bg-secondory-color h-60">
+                <div className="w-full sm:w-full md:w-full lg:w-2/4 xl:w-2/4 h-72 flex flex-row flex-wrap justify-center items-center bg-secondory-color ">
                     <div className=" w-28 flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm bg-pale-yellow">
                         Check-in
                         <input
