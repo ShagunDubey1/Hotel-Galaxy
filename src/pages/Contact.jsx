@@ -40,7 +40,7 @@ const ContactBody = () => {
         <section
             className=" w-auto h-auto  flex flex-row flex-wrap justify-center gap-4 m-4 sm:m-10"
         >
-            <div className=" w-full sm:w-[360px] h-[600px] p-4 shadow-md">
+            <div className=" w-full sm:w-[360px] h-[600px] p-4 shadow-md mb-4">
                 <div className="  pb-4">
                     <h2 className=" text-[1rem] font-normal ">
                         Feel free to write on gmhotelgalaxy@gmail.
@@ -76,6 +76,11 @@ const ContactBody = () => {
                     </h3>
                 </div>
                 <hr className=" pb-4"/>
+
+                <div className=" w-full h-60">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.6710269058904!2d81.83698417553657!3d25.449259677549534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399acbb5ec93f901%3A0x3065ec69362813cf!2sHotel%20Galaxy!5e0!3m2!1sen!2sin!4v1694486158740!5m2!1sen!2sin" loading="lazy" className="h-full w-full"></iframe>
+                </div>
+
             </div>
 
             <ContactForm />
@@ -117,7 +122,7 @@ class ContactForm extends Component {
 
   render() {
     return (
-      <div className=" w-full sm:w-[360px] h-[600px] p-4 bg-pale-yellow shadow-md">
+      <div className=" w-full sm:w-[360px] h-[600px] p-4 bg-pale-yellow shadow-md mb-4">
         <div className="  pb-4">
             <h2 className=" text-[1.2rem] font-normal capitalize">
                 get in touch
