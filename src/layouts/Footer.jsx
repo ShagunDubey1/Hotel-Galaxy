@@ -2,6 +2,7 @@ import { RiInstagramLine, RiFacebookFill, RiTwitterFill } from "react-icons/ri";
 import { BiArrowToRight } from "react-icons/bi";
 import { MdEmail, MdPermPhoneMsg } from "react-icons/md";
 import { CgPhone } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -17,14 +18,14 @@ const Footer = () => {
                         porttitor orci sit amet, iaculis nisl.
                     </p>
                     <ul className=" flex justify-start items-center gap-4">
-                        <li className=" bg-primary-color p-2 flex justify-center items-center">
-                            <RiInstagramLine className=" text-white" />
+                        <li className=" bg-primary-color p-2 flex justify-center items-center group hover:bg-white">
+                            <RiInstagramLine className=" text-white group-hover:text-primary-color" />
                         </li>
-                        <li className=" bg-primary-color p-2 flex justify-center items-center">
-                            <RiFacebookFill className=" text-white" />
+                        <li className=" bg-primary-color p-2 flex justify-center items-center group hover:bg-white">
+                            <RiFacebookFill className=" text-white group-hover:text-primary-color" />
                         </li>
-                        <li className=" bg-primary-color p-2 flex justify-center items-center">
-                            <RiTwitterFill className=" text-white" />
+                        <li className=" bg-primary-color p-2 flex justify-center items-center group hover:bg-white">
+                            <RiTwitterFill className=" text-white group-hover:text-primary-color" />
                         </li>
                     </ul>
                 </div>
@@ -35,25 +36,26 @@ const Footer = () => {
                             General
                         </h4>
                         <ul className=" flex flex-col justify-start items-start text-[#f4f6fe] text-base font-light">
-                            <li className=" flex justify-start items-center gap-2 mb-2">
+                            <li className=" flex justify-start items-center gap-2 mb-2 hover:text-primary-color">
                                 <BiArrowToRight />
-                                About us
+                                <Link to="/about">About us</Link>
                             </li>
-                            <li className=" flex justify-start items-center gap-2 mb-2">
+                            <li className=" flex justify-start items-center gap-2 mb-2hover:text-primary-color">
                                 <BiArrowToRight />
-                                Accommodation
+                                <Link to="/rooms">Accommodation</Link>
                             </li>
-                            <li className=" flex justify-start items-center gap-2 mb-2">
+
+                            <li className=" flex justify-start items-center gap-2 mb-2 hover:text-primary-color">
                                 <BiArrowToRight />
-                                Our Dining
+                                <Link to="/events">Meetings & Events</Link>
                             </li>
-                            <li className=" flex justify-start items-center gap-2 mb-2">
+                            <li className=" flex justify-start items-center gap-2 mb-2 hover:text-primary-color">
                                 <BiArrowToRight />
-                                Meetings & Events
+                                <Link to="/events">Gallery</Link>
                             </li>
-                            <li className=" flex justify-start items-center gap-2 mb-2">
+                            <li className=" flex justify-start items-center gap-2 mb-2 hover:text-primary-color">
                                 <BiArrowToRight />
-                                Gallery
+                                <Link to="/events">Home</Link>
                             </li>
                         </ul>
                     </div>
@@ -66,17 +68,21 @@ const Footer = () => {
                             Bus Terminal |Civil Lines | Prayagraj – 211001
                         </address>
                         <ul className=" flex flex-col justify-start items-start text-[#f4f6fe] text-base font-light">
-                            <li className=" flex justify-start items-center gap-2 mb-2">
-                                <MdPermPhoneMsg className=" text-primary-color" />
-                                : +91-9918901686{" "}
+                            <li className="flex justify-start items-center gap-2 mb-2">
+                                <MdPermPhoneMsg className="text-primary-color" />
+                                :<a href="tel:+919918901686">+91-9918901686</a>
                             </li>
-                            <li className=" flex justify-start items-center gap-2 mb-2">
-                                <CgPhone className=" text-primary-color" />:
-                                0532-2400507 - Ext 12
+                            <li className="flex justify-start items-center gap-2 mb-2">
+                                <CgPhone className="text-primary-color" />:
+                                <a href="tel:05322400507">
+                                    0532-2400507 - Ext 12
+                                </a>
                             </li>
-                            <li className=" flex justify-start items-center gap-2 mb-2">
-                                <MdEmail className=" text-primary-color" />:
-                                gmhotelgalaxy@gmail.
+                            <li className="flex justify-start items-center gap-2 mb-2">
+                                <MdEmail className="text-primary-color" />:
+                                <a href="mailto:gmhotelgalaxy@gmail.com">
+                                    gmhotelgalaxy@gmail.com
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -88,9 +94,15 @@ const Footer = () => {
                         Copyright © Hotel Galaxy all rights reserved.
                     </p>
                     <ul className=" sm:flex justify-center gap-2 md:gap-4 items-center text-[#f4f6fe] text-sm md:text-base font-light hidden w-[30%] ">
-                        <li>Home</li>
-                        <li>Privacy Policy</li>
-                        <li>Contact</li>
+                        <li className="hover:text-primary-color">
+                            <Link to="/events">Home</Link>
+                        </li>
+                        <li className=" hover:text-primary-color">
+                            Privacy Policy
+                        </li>
+                        <li className=" hover:text-primary-color">
+                            <Link to="/contact">Contact</Link>
+                        </li>
                     </ul>
                 </div>
             </div>

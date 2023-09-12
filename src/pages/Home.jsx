@@ -179,7 +179,7 @@ const HeroWrapper = () => {
         <Carousel
             autoplay={true}
             loop={true}
-            autoplayDela={1000}
+            autoplayDelay={2000}
             className=" w-full h-screen"
         >
             <div className="relative h-full w-full">
@@ -187,7 +187,6 @@ const HeroWrapper = () => {
                 <div className="absolute inset-0 grid h-full w-full place-items-center bg-filter">
                     <div className="w-3/4 text-center md:w-2/4">
                         <Typography
-                            variant="p"
                             className=" text-primary-color text-lg  tracking-widest uppercase"
                         >
                             This is Luxury Hotel
@@ -238,7 +237,6 @@ const HeroWrapper = () => {
                 <div className="absolute inset-0 grid h-full w-full place-items-center bg-filter">
                     <div className="w-3/4 text-center md:w-2/4">
                         <Typography
-                            variant="p"
                             className=" text-primary-color text-lg  tracking-widest uppercase"
                         >
                             This is Luxury Hotel
@@ -289,7 +287,7 @@ const HeroWrapper = () => {
                 <div className="absolute inset-0 grid h-full w-full place-items-center bg-filter">
                     <div className="w-3/4 text-center md:w-2/4">
                         <Typography
-                            variant="p"
+                            
                             className=" text-primary-color text-lg  tracking-widest uppercase"
                         >
                             This is Luxury Hotel
