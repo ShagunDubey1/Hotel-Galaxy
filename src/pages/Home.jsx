@@ -1,11 +1,12 @@
 import { Carousel, Typography, Button } from "@material-tailwind/react";
+import RoomCard from "../components/roomCard/RoomCard";
+
 // Importing icons
 import { HiUser, HiBell } from "react-icons/hi";
 import { GiRotaryPhone } from "react-icons/gi";
 import { BsAlarm, BsKey } from "react-icons/BS";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { MdOutlineLocalLaundryService } from "react-icons/md";
-import { MdRoomService } from "react-icons/md";
 import { BiMap, BiHomeAlt2, BiPhoneCall } from "react-icons/bi";
 import { FaFemale } from "react-icons/fa";
 import {
@@ -30,7 +31,7 @@ import eventHall from "../assets/Images/eventHall.jpeg";
 import image1 from "../assets/Images/img.jpeg";
 import bath from "../assets/Images/bath.jpeg";
 import logo from "../assets/logo.png";
-import frontView from "../assets/Images/frontView.jpeg"
+import frontView from "../assets/Images/frontView.jpeg";
 
 import { useState } from "react";
 
@@ -83,7 +84,7 @@ const TabbedContent = () => {
             <div className="">
                 {activeTab === "about" && (
                     <div>
-                        <p>
+                        <p className=" text-p">
                             Welcome to Hotel Galaxy Prayagraj.<br></br>
                             At Hotel Galaxy Prayagraj, we take pride in
                             providing a luxurious and memorable stay experience
@@ -98,20 +99,18 @@ const TabbedContent = () => {
                 )}
                 {activeTab === "features" && (
                     <div>
-                        <p>Welcome to Hotel Galaxy Prayagraj.</p>
+                        <p className=" text-p">Welcome to Hotel Galaxy Prayagraj.</p>
                     </div>
                 )}
                 {activeTab === "info" && (
                     <div>
-                        <p>Welcome to Hotel Galaxy Prayagraj.</p>
+                        <p className=" text-p">Welcome to Hotel Galaxy Prayagraj.</p>
                     </div>
                 )}
             </div>
         </div>
     );
 };
-
-
 
 // NEWS AND POSTS
 
@@ -296,11 +295,41 @@ const HeroWrapper = () => {
             </div>
         </Carousel>
     );
-}
+};
 
 // MAIN CONTENT OF THE PAGE
 
 const Home = () => {
+    const roomsDetails = [
+        {
+            id: 1,
+            roomType: "Deluxe Double Rooms",
+            price: "599",
+            brief: "38m2/2 beds/1 bathroom",
+            bgImg: "url('../../src/assets/images/room2.jpeg')",
+            description:
+                "Architecture viverra tristique ustoni an missten vitae diam   neque nivamus the aestan the atene artines arinianu ateli ine finibus viverra neclacus.",
+        },
+        {
+            id: 2,
+            roomType: "Double Room",
+            price: "499",
+            brief: "38m2/2 beds/1 bathroom",
+            bgImg: "url('../../src/assets/images/room1.jpeg')",
+            description:
+                "Architecture viverra tristique ustoni an missten vitae diam   neque nivamus the aestan the atene artines arinianu ateli ine finibus viverra neclacus.",
+        },
+        {
+            id: 3,
+            roomType: "Superior Rooms",
+            price: "599",
+            brief: "38m2/2 beds/1 bathroom",
+            bgImg: "url('../../src/assets/images/room2.jpeg')",
+            description:
+                "Architecture viverra tristique ustoni an missten vitae diam   neque nivamus the aestan the atene artines arinianu ateli ine finibus viverra neclacus.",
+        },
+    ];
+
     return (
         <>
             <HeroWrapper />
@@ -519,87 +548,44 @@ const Home = () => {
             <div className=" w-full py-20 flex flex-col justify-center items-center mt-8 bg-pale-yellow">
                 <div className=" text-primary-color">Hotel Galaxy</div>
                 <div className=" text-3xl">ROOMS & HALLS</div>
-                <div className="w-1/4 mb-4 h-0.5 bg-primary-color "></div>
+                <div className="w-1/4 mb-24 h-0.5 bg-primary-color"></div>
 
-                <div className="w-full flex flex-row flex-wrap justify-center gap-4">
-                    <div className=" w-60 h-64 relative">
-                        <div
-                            className="w-full h-full absolute top-0 left-0"
-                            style={{
-                                background:
-                                    "linear-gradient(180deg, #00000080 0%, #DBA76BB3 100%)",
-                            }}
-                        ></div>
-                        <img className="h-full" src={room2} alt="Room" />
-                        <div className="absolute inset-0 flex flex-col pl-8 pb-8 justify-end text-white">
-                            <p className="text-lg font-semibold">Room</p>
-                            <p className=" text-sm">2 beds / bathroom</p>
-                        </div>
-                    </div>
-                    <div className="w-60 h-64 relative">
-                        <div
-                            className="w-full h-full absolute top-0 left-0"
-                            style={{
-                                background:
-                                    "linear-gradient(180deg, #00000080 0%, #DBA76BB3 100%)",
-                            }}
-                        ></div>
-                        <img
-                            className="h-full"
-                            src={eventHall}
-                            alt="Event Hall"
-                        />
-                        <div className="absolute inset-0 flex flex-col pl-8 pb-8 justify-end text-white">
-                            <p className="text-lg font-semibold">Event Hall</p>
-                            <p className=" text-sm">Full capacity EventHall</p>
-                        </div>
-                    </div>
-                    <div className="w-60 h-64 relative">
-                        <div
-                            className="w-full h-full absolute top-0 left-0"
-                            style={{
-                                background:
-                                    "linear-gradient(180deg, #00000080 0%, #DBA76BB3 100%)",
-                            }}
-                        ></div>
-                        <img
-                            className="h-full"
-                            src={eventHall}
-                            alt="Event Hall"
-                        />
-                        <div className="absolute inset-0 flex flex-col pl-8 pb-8 justify-end text-white">
-                            <p className="text-lg font-semibold">Event Hall</p>
-                            <p className=" text-sm">Meeting space available</p>
-                        </div>
-                    </div>
+                <div className=" relative w-full flex flex-wrap justify-center items-center gap-8 max-w-[1140px]">
+                    {roomsDetails.map((item) => (
+                        <RoomCard key={item.id} {...item} />
+                    ))}
                 </div>
 
-                <div className=" text-lg items-center">
-                    Our hotel boasts a range of well-appointed rooms and suites,
-                    each designed to provide you with a restful retreat. Whether
-                    you are here for a business trip, a family vacation, or a
-                    pilgrimage, our accommodations offer a serene ambiance and
-                    contemporary amenities to ensure a relaxed stay.
+                <div className=" text-lg items-center max-w-[1140px]">
+                    <p className=" text-center my-8 text-xl mt-12">
+                        Our hotel boasts a range of well-appointed rooms and
+                        suites, each designed to provide you with a restful
+                        retreat. Whether you are here for a business trip, a
+                        family vacation, or a pilgrimage, our accommodations
+                        offer a serene ambiance and contemporary amenities to
+                        ensure a relaxed stay.
+                    </p>
                 </div>
             </div>
 
             {/*   ABOUT US */}
 
-            <div className="flex flex-col md:flex-row lg:flex-row justify-end  flex-wrap lg:m-14 md:m-10">
-                <div className=" lg:w-1/2 w-full group">
-                    <div className="lg:w-96 lg:h-64 md:w-64 md:h-44 mb-4 mr-4 border-2 border-black absolute transition-transform transform group-hover:translate-x-4 group-hover:translate-y-4"></div>
-                    <div className=" lg:w-96 lg:h-64 md:w-64 md:h-48  mt-4 ml-4  relative transition-transform transform group-hover:-translate-x-4 group-hover:-translate-y-4">
-                        <img
-                            src={room1}
-                            alt="Hotal Galalxy"
-                            className=" w-full"
-                        />
+            <section className=" relative w-full flex flex-col items-center justify-center pt-24">
+                <div className="flex flex-col md:flex-row lg:flex-row justify-end  flex-wrap lg:m-14 md:m-10 max-w-[1140px]">
+                    <div className=" lg:w-1/2 w-[50%] group flex justify-center">
+                        <div className="lg:w-96 lg:h-64 md:w-64 md:h-44 mb-4 mr-4 border-2 border-black absolute transition-transform transform group-hover:translate-x-4 group-hover:translate-y-4"></div>
+                        <div className=" lg:w-96 lg:h-64 md:w-64 md:h-48  mt-4 ml-4  relative transition-transform transform group-hover:-translate-x-4 group-hover:-translate-y-4 ">
+                            <img
+                                src={room1}
+                                alt="Hotal Galalxy"
+                                className=" w-full"
+                            />
+                        </div>
                     </div>
+
+                    <TabbedContent className=" w-[50%]" />
                 </div>
-
-                <TabbedContent />
-            </div>
-
+            </section>
             {/* URBAN SPACE */}
 
             <div className="relative w-full h-64">
@@ -620,7 +606,6 @@ const Home = () => {
                     <div className=" text-3xl text-center">
                         A Warm, Exquisite, Practical and Urban Space
                     </div>
-                    {/* <button className="h-8 w-24 bg-orange-400 border-2 border-gray-300 transition duration-300 ease-in-out group hover:bg-gray-200 hover:border-orange-400">Book now</button> */}
                     <button className=" w-28 bg-primary-color py-3 text-white text-md uppercase hover:bg-white hover:border hover:text-primary-color transition-all duration-200 ease-in-out tracking-wide lg:block">
                         Book now
                     </button>
