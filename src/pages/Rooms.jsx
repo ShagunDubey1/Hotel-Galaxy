@@ -69,7 +69,7 @@ const CardWrapper = () => {
             <h2 className=" text-5xl font-medium capitalize mb-12">
                 Rooms & Halls
             </h2>
-            <div className=" relative w-full flex flex-wrap justify-center items-center gap-8 max-w-[1140px]">
+            <div className=" relative w-full flex flex-wrap justify-center items-center gap-8 max-w-[1140px] px-8">
                 {roomsDetails.map((item) => (
                     <RoomCard key={item.id} {...item} />
                 ))}
