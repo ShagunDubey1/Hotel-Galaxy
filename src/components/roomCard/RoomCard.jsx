@@ -1,4 +1,5 @@
 import { BookNowBtn } from "../BookNowBtn";
+import room2 from "../../assets/Images/room2.jpeg"
 import "./cardEffect.css";
 
 
@@ -8,7 +9,7 @@ const RoomCard = ({ roomType, price, brief, description, bgImg }) => {
             <div
                 className=" card-element-front absolute  top-0 left-0 w-full h-full overflow-hidden bg-cover bg-center bg-no-repeat flex flex-col px-4 py-6"
                 style={{
-                    backgroundImage: bgImg,
+                    backgroundImage: `url(${room2})`,
                 }}
             >
                 <div
