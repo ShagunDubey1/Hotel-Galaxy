@@ -18,7 +18,7 @@ const HeroWrapper = ({title}) => {
                 </div>
                 <div className=" font-bold">
                     <p className="  text-p uppercase flex justify-center items-center gap-3 font-normal">
-                        home <IoChevronForward /> <span>{title}</span>
+                        home page<IoChevronForward /> <span>{title}</span>
                     </p>
                 </div>
             </div>
