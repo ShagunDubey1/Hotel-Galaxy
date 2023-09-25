@@ -101,12 +101,32 @@ const TabbedContent = () => {
                 )}
                 {activeTab === "features" && (
                     <div>
-                        <p className=" text-p">Welcome to Hotel Galaxy Prayagraj.</p>
+                        <p className=" text-p">
+                            Welcome to Hotel Galaxy Prayagraj.<br></br>
+                            At Hotel Galaxy Prayagraj, we take pride in
+                            providing a luxurious and memorable stay experience
+                            in the heart of the historic city of Prayagraj
+                            (formerly known as Allahabad). Our commitment to
+                            excellence and unwavering dedication to guest
+                            satisfaction have made us a preferred choice for
+                            travelers seeking comfort, convenience, and warm
+                            hospitality..
+                        </p>
                     </div>
                 )}
                 {activeTab === "info" && (
                     <div>
-                        <p className=" text-p">Welcome to Hotel Galaxy Prayagraj.</p>
+                        <p className=" text-p">
+                            Welcome to Hotel Galaxy Prayagraj.<br></br>
+                            At Hotel Galaxy Prayagraj, we take pride in
+                            providing a luxurious and memorable stay experience
+                            in the heart of the historic city of Prayagraj
+                            (formerly known as Allahabad). Our commitment to
+                            excellence and unwavering dedication to guest
+                            satisfaction have made us a preferred choice for
+                            travelers seeking comfort, convenience, and warm
+                            hospitality..
+                        </p>
                     </div>
                 )}
             </div>
@@ -372,22 +392,22 @@ const Home = () => {
         <>
             <HeroWrapper />
 
-            <div className="lg:h-28 md:h-auto m-auto bg-pale-yellow w-[70%]  -mt-14 transform  flex flex-row flex-wrap justify-evenly items-center">
-                <div className=" w-28 h-24 flex flex-col justify-evenly p-4 md:p-2 sm:p-2 text-sm">
+            <div className="lg:h-28 md:h-auto m-auto bg-pale-yellow w-[70%]  -mt-14 transform  flex flex-row flex-wrap justify-evenly items-center p-2">
+                <div className=" w-28 h-24 flex flex-col justify-evenly p-0 md:p-2 sm:p-2 text-sm">
                     <p>Check-in</p>
                     <input
                         className=" bg-transparent border border-gray-300 p-2"
                         type="date"
                     />
                 </div>
-                <div className=" w-28 h-24 flex flex-col justify-evenly p-4 md:p-2 sm:p-1 text-sm ">
+                <div className=" w-28 h-24 flex flex-col justify-evenly p-0 md:p-2 sm:p-1 text-sm ">
                     <p>Check-out</p>
                     <input
                         className=" bg-transparent border  border-gray-300 p-2"
                         type="date"
                     />
                 </div>
-                <div className=" w-28 h-24 flex flex-col justify-evenly p-4 md:p-2 sm:p-1 text-sm">
+                <div className=" w-28 h-24 flex flex-col justify-evenly p-0 md:p-2 sm:p-1 text-sm">
                     <p>Adult</p>
                     <select
                         className=" bg-transparent border border-gray-300 p-2"
@@ -402,7 +422,7 @@ const Home = () => {
                         <option value="2">6</option>
                     </select>
                 </div>
-                <div className=" w-28 h-24 flex flex-col justify-evenly p-4 md:p-2 sm:p-1 text-sm">
+                <div className=" w-28 h-24 flex flex-col justify-evenly p-0 md:p-2 sm:p-1 text-sm">
                     <p>Children</p>
                     <select
                         className=" bg-transparent border border-gray-300 p-2"
@@ -417,7 +437,7 @@ const Home = () => {
                         <option value="2">6</option>
                     </select>
                 </div>
-                <div className=" w-28 h-24 flex flex-col justify-evenly p-4 md:p-2 sm:p-1 text-sm">
+                <div className=" w-28 h-24 flex flex-col justify-evenly p-0 md:p-2 sm:p-1 text-sm">
                     <p>Rooms</p>
                     <select
                         className=" bg-transparent border border-gray-300 p-2"
@@ -432,7 +452,7 @@ const Home = () => {
                         <option value="2">6</option>
                     </select>
                 </div>
-                <div className=" w-28 h-24 flex flex-col justify-evenly p-4 md:p-2 sm:p-1 text-sm">
+                <div className=" w-28 h-24 flex flex-col justify-evenly p-0 md:p-2 sm:p-1 text-sm">
                     <button className=" bg-primary-color py-3 text-white text-md uppercase hover:bg-white hover:text-primary-color transition-all duration-200 ease-in-out tracking-wide lg:block">
                         Book now
                     </button>
@@ -440,9 +460,8 @@ const Home = () => {
             </div>
 
             {/* INFORMATION */}
-            <section className=" relative w-full flex flex-col items-center justify-center pt-24">
-                <div className=" w-full h-auto flex lg:flex-row md:flex-col flex-wrap lg:gap-5 md:gap-10 justify-center items-center mt-20  max-w-[1140px]">
-                    <div className=" w-[30%] h-52 md:h-72 text-sm flex flex-col flex-wrap justify-center items-center shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out text-center px-4">
+                <div className=" w-full h-auto flex lg:flex-row md:flex-row flex-col flex-wrap lg:gap-5 md:gap-10 justify-center items-center mt-20 ">
+                    <div className=" w-64 h-80 md:h-72 text-sm flex flex-col flex-wrap flex-shrink-0 justify-center items-center shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out text-center px-4">
                         <BiMap className=" h-20 w-8" />
                         <div className="w-1/3 h-0.5 bg-primary-color mx-auto my-4"></div>
                         <p className=" text-p text-center">
@@ -451,7 +470,7 @@ const Home = () => {
                             find us wherever you come from.
                         </p>
                     </div>
-                    <div className="w-[30%] h-52 md:h-72 text-sm flex flex-col flex-wrap justify-center items-center shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out text-center">
+                    <div className="w-64 h-80 md:h-72 text-sm flex flex-col flex-wrap flex-shrink-0 justify-center items-center shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out text-center">
                         <BiHomeAlt2 className=" h-20 w-8" />
                         <div className="w-1/3 h-0.5 bg-primary-color mx-auto my-4"></div>
                         <p className=" text-p text-center">
@@ -460,7 +479,7 @@ const Home = () => {
                             over the world throughout the year.
                         </p>
                     </div>
-                    <div className="w-[30%] h-52 md:h-72 text-sm flex flex-col flex-wrap justify-center items-center shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out text-center">
+                    <div className="w-64 h-80 md:h-72 text-sm flex flex-col flex-wrap flex-shrink-0 justify-center items-center shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out text-center">
                         <AiOutlineStar className=" h-20 w-8" />
                         <div className="w-1/3 h-0.5 bg-primary-color mx-auto my-4"></div>
                         <p className=" text-p text-center">
@@ -470,10 +489,9 @@ const Home = () => {
                         </p>
                     </div>
                 </div>
-            </section>
 
             {/* FEATURES  */}
-            <section className=" relative w-full flex flex-col items-center justify-center pt-24">
+            {/* <section className=" relative w-full flex flex-col items-center justify-center pt-24">
                 <div className=" w-auto h-auto flex flex-col lg:flex-row flex-wrap justify-center mt-24 mx-20 md:mx-8 sm:mx-0 max-w-[1140px]">
                     <div className=" w-[40%] lg:w-1/2 flex flex-row justify-center gap-3">
                         <img
@@ -520,7 +538,54 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
+            <section className="relative w-full flex flex-col items-center justify-center pt-24">
+    <div className="w-full max-w-[1140px] flex flex-col lg:flex-row flex-wrap justify-center mx-4 lg:mx-auto">
+        <div className="w-full lg:w-[40%] flex flex-col lg:flex-row justify-center gap-4">
+            <img
+                src={image1}
+                alt="photo"
+                className="w-56 h-72 mb-4 lg:mb-0"
+            />
+            <img
+                src={bath}
+                alt="photo"
+                className="w-56 h-72 mt-4 lg:mt-0"
+            />
+        </div>
+        <div className="w-full lg:w-[60%] p-4 flex flex-col justify-center items-center lg:items-start m-4">
+            <div className="text-primary-color text-2xl font-bold mb-4">Hotel Galaxy</div>
+            <div className="text-3xl mb-4">
+                The Right Apartment Hotel & Resort for You
+            </div>
+            <div className="colorful-div text-2xl font-bold p-2 flex flex-row justify-start w-full">
+                <div className="w-10 h-10 text-primary-color">
+                    <AiOutlineHome />
+                </div>
+                <div className="flex flex-col justify-start pl-4">
+                    <p className="text-lg">5 Star Hotel in Prayagraj</p>
+                    <p className="font-extrabold text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Unde, sit.
+                    </p>
+                </div>
+            </div>
+            <div className="colorful-div text-2xl font-bold p-2 flex flex-row justify-start w-full">
+                <div className="w-10 h-10 text-primary-color">
+                    <AiOutlineHome />
+                </div>
+                <div className="flex flex-col justify-start pl-4">
+                    <p className="text-lg">5 Star Hotel in Prayagraj</p>
+                    <p className="font-extrabold text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Unde, sit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
             {/* SERVICES */}
 
             <div className=" md:mx-12 lg:mx-24 mt-16 flex justify-center flex-col items-center relative py-24">
@@ -609,10 +674,10 @@ const Home = () => {
             {/*   ABOUT US */}
 
             <section className=" relative w-full flex flex-col items-center justify-center py-24">
-                <div className="flex flex-col md:flex-row lg:flex-row justify-end  flex-wrap lg:m-14 md:m-10 max-w-[1140px]">
-                    <div className=" lg:w-1/2 w-[50%] group flex justify-center">
-                        <div className="lg:w-96 lg:h-64 md:w-64 md:h-44 mb-4 mr-4 border-2 border-black absolute transition-transform transform group-hover:translate-x-4 group-hover:translate-y-4"></div>
-                        <div className=" lg:w-96 lg:h-64 md:w-64 md:h-48  mt-4 ml-4  relative transition-transform transform group-hover:-translate-x-4 group-hover:-translate-y-4 ">
+                <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center lg:m-14 md:m-10 max-w-[1140px]">
+                    <div className=" w-[50%] group flex justify-center">
+                        <div className="lg:w-96 lg:h-64 md:w-64 md:h-44 w-64 h-44 mb-4 mr-4 border-2 border-black absolute transition-transform transform group-hover:translate-x-4 group-hover:translate-y-4"></div>
+                        <div className=" lg:w-96 lg:h-64 md:w-64 md:h-44 w-64 h-44 mt-4 ml-4 relative flex-shrink-0 transition-transform transform group-hover:-translate-x-4 group-hover:-translate-y-4 ">
                             <img
                                 src={room1}
                                 alt="Hotal Galalxy"
