@@ -537,52 +537,52 @@ const Home = () => {
                     </div>
                 </div>
             </section> */}
-            <section className="relative w-full flex flex-col items-center justify-center pt-24">
-    <div className="w-full max-w-[1140px] flex flex-col lg:flex-row flex-wrap justify-center mx-4 lg:mx-auto">
-        <div className="w-full lg:w-[40%] flex flex-col lg:flex-row justify-center gap-4">
-            <img
-                src={image1}
-                alt="photo"
-                className="w-56 h-72 mb-4 lg:mb-0"
-            />
-            <img
-                src={bath}
-                alt="photo"
-                className="w-56 h-72 mt-4 lg:mt-0"
-            />
-        </div>
-        <div className="w-full lg:w-[60%] p-4 flex flex-col justify-center items-center lg:items-start m-4">
-            <div className="text-primary-color text-2xl font-bold mb-4">Hotel Galaxy</div>
-            <div className="text-3xl mb-4">
-                The Right Apartment Hotel & Resort for You
-            </div>
-            <div className="colorful-div text-2xl font-bold p-2 flex flex-row justify-start w-full">
-                <div className="w-10 h-10 text-primary-color">
-                    <AiOutlineHome />
+            <section className="relative w-full flex items-center justify-center pt-24">
+                <div className="w-full max-w-[1140px] flex flex-col sm:flex-col md:flex-row lg:flex-row flex-wrap justify-around mx-4 lg:mx-auto">
+                    <div className="w-full sm:w-full md:w-[40%] lg:w-[40%] flex flex-row justify-center items-center gap-4">
+                        <img
+                            src={image1}
+                            alt="photo"
+                            className="w-56 h-72 mb-4 max-w-full "
+                        />
+                        <img
+                            src={bath}
+                            alt="photo"
+                            className="w-56 h-72 mt-4 hidden sm:block md:block lg:block max-w-full  "
+                        />
+                    </div>
+                    <div className="w-auto sm:w-auto md:w-[40%] lg:w-[40%] p-4 flex flex-col justify-center items-center lg:items-start m-4">
+                        <div className="text-primary-color text-2xl font-bold mb-4">Hotel Galaxy</div>
+                        <div className="text-3xl text-center mb-4">
+                            <p>The Right Apartment Hotel & Resort for You</p>
+                        </div>
+                        <div className="colorful-div text-2xl font-bold p-2 flex flex-row justify-start w-full">
+                            <div className="w-10 h-10 text-primary-color">
+                                <AiOutlineHome />
+                            </div>
+                            <div className="flex flex-col justify-start pl-4">
+                                <p className="text-lg">5 Star Hotel in Prayagraj</p>
+                                <p className="font-extrabold text-sm">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Unde, sit.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="colorful-div text-2xl font-bold p-2 flex flex-row justify-start w-full">
+                            <div className="w-10 h-10 text-primary-color">
+                                <AiOutlineHome />
+                            </div>
+                            <div className="flex flex-col justify-start pl-4">
+                                <p className="text-lg">5 Star Hotel in Prayagraj</p>
+                                <p className="font-extrabold text-sm">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Unde, sit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className="flex flex-col justify-start pl-4">
-                    <p className="text-lg">5 Star Hotel in Prayagraj</p>
-                    <p className="font-extrabold text-sm">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Unde, sit.
-                    </p>
-                </div>
-            </div>
-            <div className="colorful-div text-2xl font-bold p-2 flex flex-row justify-start w-full">
-                <div className="w-10 h-10 text-primary-color">
-                    <AiOutlineHome />
-                </div>
-                <div className="flex flex-col justify-start pl-4">
-                    <p className="text-lg">5 Star Hotel in Prayagraj</p>
-                    <p className="font-extrabold text-sm">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Unde, sit.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+            </section>
 
             {/* SERVICES */}
 
