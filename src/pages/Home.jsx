@@ -32,7 +32,7 @@ import image1 from "../assets/Images/img.jpeg";
 import bath from "../assets/Images/bath.jpeg";
 import logo from "../assets/logo.png";
 import frontView from "../assets/Images/frontView.jpeg";
-import bg from "../assets/bg.mp4"
+import bg from "../assets/bg.mp4";
 
 import { useState } from "react";
 import { BookNowBtn } from "../components/BookNowBtn";
@@ -481,55 +481,6 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* FEATURES  */}
-            {/* <section className=" relative w-full flex flex-col items-center justify-center pt-24">
-                <div className=" w-auto h-auto flex flex-col lg:flex-row flex-wrap justify-center mt-24 mx-20 md:mx-8 sm:mx-0 max-w-[1140px]">
-                    <div className=" w-[40%] lg:w-1/2 flex flex-row justify-center gap-3">
-                        <img
-                            src={image1}
-                            alt="photo"
-                            className=" w-56 h-72  mb-10"
-                        />
-                        <img
-                            src={bath}
-                            alt="photo"
-                            className=" w-56 h-72  mt-10"
-                        />
-                    </div>
-                    <div className=" w-[60%] h-auto lg:w-1/2 flex flex-col flex-wrap justify-between lg:p-4 item-center lg:items-start  m-5 sm:m-0">
-                        <div className=" text-primary-color">Hotel Galaxy</div>
-                        <div className=" text-3xl">
-                            The right Apartment Hotel & Resort for you
-                        </div>
-                        <div className="colorful-div text-2xl font-bold p-2 flex flex-row justify-start w-full h-16">
-                            <div className=" ">
-                                <AiOutlineHome className=" w-10 h-10 text-primary-color" />
-                            </div>
-                            <div className="flex flex-col justify-start pl-4">
-                                <p className=" ">5 Star hotel in Prayagraj</p>
-                                <p className=" font-extrabold text-sm">
-                                    {" "}
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Unde, sit.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="colorful-div text-2xl font-bold p-2 flex flex-row justify-start w-full h-16">
-                            <div className=" ">
-                                <AiOutlineHome className=" w-10 h-10 text-primary-color" />
-                            </div>
-                            <div className="flex flex-col justify-start pl-4">
-                                <p className=" ">5 Star hotel in Prayagraj</p>
-                                <p className=" font-extrabold text-sm">
-                                    {" "}
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Unde, sit.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
             <section className="relative w-full flex items-center justify-center pt-24">
                 <div className="w-full max-w-[1140px] flex flex-col sm:flex-col md:flex-row lg:flex-row flex-wrap justify-around mx-4 lg:mx-auto">
                     <div className="w-full sm:w-full md:w-[40%] lg:w-[40%] flex flex-row justify-center items-center gap-4">
@@ -747,16 +698,16 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full lg:w-[60%]  flex flex-col flex-wrap justify-center items-center bg-secondory-color py-8">
-                        <div className=" flex w-full justify-center items-center gap-6">
-                            <div className=" w-[30%] flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm bg-pale-yellow">
+                    <div className="w-full lg:w-[60%]  flex flex-col flex-wrap justify-center items-center bg-secondory-color py-8 px-8 ">
+                        <div className=" flex w-full justify-center items-center gap-3 sm:gap-6">
+                            <div className=" w-[50%] flex justify-center flex-col md:p-2 py-4 sm:p-1 text-sm bg-pale-yellow">
                                 Check-in
                                 <input
                                     className=" bg-transparent border border-gray-300 p-4"
                                     type="date"
                                 />
                             </div>
-                            <div className="w-[30%]  flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm ">
+                            <div className=" w-[50%] flex justify-center flex-col py-4  md:p-2 sm:p-1 text-sm ">
                                 Check-out
                                 <input
                                     className=" bg-transparent border  border-gray-300 p-4"
@@ -764,8 +715,8 @@ const Home = () => {
                                 />
                             </div>
                         </div>
-                        <div className=" flex w-full justify-center items-center gap-6">
-                            <div className=" w-[30%] flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm">
+                        <div className=" flex w-full justify-center items-center gap-3 sm:gap-6">
+                            <div className=" w-[50%]  flex justify-center flex-col md:p-2 py-4 sm:p-1 text-sm">
                                 Adult
                                 <select
                                     className="bg-transparent border border-gray-300 p-4"
@@ -780,7 +731,7 @@ const Home = () => {
                                     <option value="2">6</option>
                                 </select>
                             </div>
-                            <div className=" w-[30%] flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm">
+                            <div className="w-[50%] flex justify-center flex-col md:p-2 py-4 sm:p-1 text-sm">
                                 Children
                                 <select
                                     className=" bg-transparent border border-gray-300 p-4"
@@ -796,8 +747,8 @@ const Home = () => {
                                 </select>
                             </div>
                         </div>
-                        <div className=" flex w-full justify-center items-center gap-6">
-                            <div className=" w-[30%] flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm">
+                        <div className=" flex w-full justify-center items-centergap-3 sm:gap-6">
+                            <div className="w-[50%] flex justify-center flex-col md:p-2 py-4 sm:p-1 text-sm">
                                 Rooms
                                 <select
                                     className=" bg-transparent border border-gray-300 p-4"
@@ -812,7 +763,7 @@ const Home = () => {
                                     <option value="2">6</option>
                                 </select>
                             </div>
-                            <div className=" w-[30%] flex justify-end flex-col p-4 md:p-2 sm:p-1 text-sm">
+                            <div className=" w-[50%] flex justify-end flex-col md:p-2 py-4 sm:p-1 text-sm">
                                 <BookNowBtn />
                             </div>
                         </div>
