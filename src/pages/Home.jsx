@@ -143,12 +143,16 @@ const Event = () => {
                 <h3 className=" text-h3 text-primary-color uppercase mb-4">
                     Hotel Galaxy
                 </h3>
-                <h2 className=" text-5xl font-medium capitalize">
+                <h2 className=" text-5xl font-medium capitalize text-center">
                     Meetings & Events
                 </h2>
-                <div className=" w-full flex flex-col justify-center  md:grid md:grid-rows-3 md:grid-cols-4 h-[28rem] p-4 md:p-16 md:px-20 sm:px-4  mt-8 relative">
+                <div className=" w-full flex flex-col justify-center md:grid md:grid-rows-3 md:grid-cols-4 h-[28rem] p-4 md:p-16 md:px-20 sm:px-4  mt-8 relative">
                     <div className=" row-start-1 row-span-1 col-start-1 col-span-1">
-                        <img src={logo} alt="" className=" max-h-full" />
+                        <img
+                            src={logo}
+                            alt=""
+                            className=" max-h-full mx-auto md:mx-0"
+                        />
                     </div>
                     <div className=" row-start-2 row-span-2 col-start-1 col-span-3 z-10 relative clipping  text-white p-8 bg-[#222] ">
                         <h3 className="capitalize text-h2 mb-4 text-primary-color mt-6">
@@ -168,18 +172,22 @@ const Event = () => {
 
                 <div className=" w-full flex flex-col justify-center  md:grid md:grid-rows-3 md:grid-cols-4 h-[28rem] p-4 md:p-16 md:px-20 sm:px-4  my-8 relative">
                     <div className=" row-start-1 row-span-1 col-start-4 col-span-1 flex justify-end">
-                        <img src={logo} alt="" className=" max-h-full" />
+                        <img
+                            src={logo}
+                            alt=""
+                            className=" max-h-full mx-auto md:mx-0"
+                        />
                     </div>
                     <div className="  row-start-2 row-span-2 col-start-2 col-end-5 z-10 relative clipping-right text-white py-8 px-4 bg-[#222] flex flex-col items-center sm:items-end md:items-end lg:items-end">
-                            <h3 className="capitalize text-h2 mb-4 text-primary-color mt-6 text-start">
-                                Hotel Galaxy
-                            </h3>
-                            <h2 className=" text-base text-white font-['Josefin_Sans'] font-normal">
-                                Premium hotel in Prayagraj
-                            </h2>
-                            <h1 className=" text-base text-white font-['Josefin_Sans'] font-normal">
-                                We welcome you in our prestigious Hotel
-                            </h1>
+                        <h3 className="capitalize text-h2 mb-4 text-primary-color mt-6 md:text-start text-center">
+                            Hotel Galaxy
+                        </h3>
+                        <h2 className=" text-base text-white font-['Josefin_Sans'] font-normal md:text-start text-center">
+                            Premium hotel in Prayagraj
+                        </h2>
+                        <h1 className=" text-base text-white font-['Josefin_Sans'] font-normal md:text-start text-center">
+                            We welcome you in our prestigious Hotel
+                        </h1>
                     </div>
                     <div className=" row-start-1 row-span-3 col-start-1 col-span-2 z-10 sm:z-0 md:z-0 lg:z-0  relative">
                         <img src={room3} className=" img-cover" />
@@ -385,21 +393,21 @@ const Home = () => {
                 <div className=" w-28 h-24 flex flex-col justify-evenly p-0 md:p-2 sm:p-2 text-sm">
                     <p>Check-in</p>
                     <input
-                        className=" bg-transparent border border-gray-300 p-2"
+                        className=" bg-transparent border border-gray-300 p-2 py-3 md:py-2"
                         type="date"
                     />
                 </div>
                 <div className=" w-28 h-24 flex flex-col justify-evenly p-0 md:p-2 sm:p-1 text-sm ">
                     <p>Check-out</p>
                     <input
-                        className=" bg-transparent border  border-gray-300 p-2"
+                        className=" bg-transparent border  border-gray-300 p-2 py-3 md:py-2"
                         type="date"
                     />
                 </div>
                 <div className=" w-28 h-24 flex flex-col justify-evenly p-0 md:p-2 sm:p-1 text-sm">
                     <p>Adult</p>
                     <select
-                        className=" bg-transparent border border-gray-300 p-2"
+                        className=" bg-transparent border border-gray-300 p-2 py-3 md:py-2"
                         name="check-in"
                         id=""
                     >
@@ -414,7 +422,7 @@ const Home = () => {
                 <div className=" w-28 h-24 flex flex-col justify-evenly p-0 md:p-2 sm:p-1 text-sm">
                     <p>Children</p>
                     <select
-                        className=" bg-transparent border border-gray-300 p-2"
+                        className=" bg-transparent border border-gray-300 p-2 py-3 md:py-2"
                         name="check-in"
                         id=""
                     >
@@ -426,10 +434,10 @@ const Home = () => {
                         <option value="2">6</option>
                     </select>
                 </div>
-                <div className=" w-28 h-24 flex flex-col justify-evenly p-0 md:p-2 sm:p-1 text-sm">
+                <div className=" w-28 h-24 flex flex-col justify-evenly p-0  md:p-2 sm:p-1 text-sm">
                     <p>Rooms</p>
                     <select
-                        className=" bg-transparent border border-gray-300 p-2"
+                        className=" bg-transparent border border-gray-300 p-2 py-3 md:py-2"
                         name="check-in"
                         id=""
                     >
@@ -441,7 +449,7 @@ const Home = () => {
                         <option value="2">6</option>
                     </select>
                 </div>
-                <div className=" w-28 h-24 flex flex-col justify-evenly p-0 md:p-2 sm:p-1 text-sm">
+                <div className=" w-28 h-24 flex flex-col justify-evenly p-0 md:p-2 sm:p-1 text-sm mt-6 md:mt-4">
                     <button className=" bg-primary-color py-3 text-white text-md uppercase hover:bg-white hover:text-primary-color transition-all duration-200 ease-in-out tracking-wide lg:block">
                         Book now
                     </button>
@@ -535,7 +543,7 @@ const Home = () => {
             {/* SERVICES */}
 
             <div className=" md:mx-12 lg:mx-24 mt-0 lg:mt-16 flex justify-center flex-col items-center relative py-24">
-                <div className=" text-4xl font-extrabold text-center">
+                <div className=" text-4xl font-extrabold text-center px-2 sm:px-0">
                     Our Services & Amenities
                 </div>
                 <div className="w-1/3 h-0.5 bg-primary-color mx-auto my-4"></div>
