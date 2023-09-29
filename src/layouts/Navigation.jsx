@@ -96,26 +96,38 @@ const Navigation = () => {
             </header>
             {/* =================toggle navigation bar===================== */}
             {showNavbar && (
-                <div className=" fixed w-full bg-white z-20">
+                <div className=" fixed w-full bg-white z-20 mt-[3.8rem]">
                     <ul className=" w-full flex flex-col justify-center items-start text-lg  font-semibold font-['Josefin_Sans'] cursor-pointer z-40">
-                        <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
-                            <NavLink to="/">Home</NavLink>
-                        </li>
-                        <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
-                            <NavLink to="/about">About</NavLink>
-                        </li>
-                        <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
-                            <NavLink to="/rooms">Rooms</NavLink>
-                        </li>
-                        <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
-                            <NavLink to="/gallery">Gallery</NavLink>
-                        </li>
-                        <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
-                            Meetings & Events
-                        </li>
-                        <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
-                            <NavLink to="/contact"> Contact</NavLink>
-                        </li>
+                        <NavLink to="/" className=" w-full">
+                            <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
+                                Home
+                            </li>
+                        </NavLink>
+                        <NavLink to="/about" className=" w-full">
+                            <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
+                                About
+                            </li>
+                        </NavLink>
+                        <NavLink to="/rooms" className=" w-full">
+                            <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
+                                Rooms
+                            </li>
+                        </NavLink>
+                        <NavLink to="/gallery" className=" w-full">
+                            <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
+                                Gallery
+                            </li>
+                        </NavLink>
+                        <NavLink to="/events" className=" w-full">
+                            <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
+                                Meetings & Events
+                            </li>
+                        </NavLink>
+                        <NavLink to="/contact" className=" w-full">
+                            <li className="w-full p-4 border-b border-solid border-b-[#ddd] hover:bg-secondory-color hover:font-bold">
+                                Contact
+                            </li>
+                        </NavLink>
                     </ul>
                 </div>
             )}
