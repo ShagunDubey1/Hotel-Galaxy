@@ -206,9 +206,7 @@ const HeroWrapper = () => {
                 <img src={eventHall} className="h-full w-full object-cover" />
                 <div className="absolute inset-0 grid h-full w-full place-items-center bg-filter">
                     <div className="w-3/4 text-center md:w-2/4">
-                        <Typography
-                            className=" text-primary-color text-lg  tracking-widest uppercase"
-                        >
+                        <Typography className=" text-primary-color text-lg  tracking-widest uppercase">
                             This is Luxury Hotel
                         </Typography>
                         <Typography
@@ -222,7 +220,7 @@ const HeroWrapper = () => {
                         <Typography
                             variant="lead"
                             color="white"
-                            className="mb-12 opacity-80 font-[Josefin_Sans] text-2xl"
+                            className=" mb-6 lg:mb-12 opacity-80 font-[Josefin_Sans] text-xl lg:text-2xl"
                         >
                             Experience unparalleled luxury and comfort at our
                             exquisite hotel, where every moment becomes a
@@ -240,7 +238,7 @@ const HeroWrapper = () => {
                                 size="lg"
                                 color="white"
                                 variant="text"
-                                className=" rounded-none"
+                                className=" rounded-none hidden md:block"
                             >
                                 Contact Us
                             </Button>
@@ -256,9 +254,7 @@ const HeroWrapper = () => {
                 />
                 <div className="absolute inset-0 grid h-full w-full place-items-center bg-filter">
                     <div className="w-3/4 text-center md:w-2/4">
-                        <Typography
-                            className=" text-primary-color text-lg  tracking-widest uppercase"
-                        >
+                        <Typography className=" text-primary-color text-lg  tracking-widest uppercase">
                             This is Luxury Hotel
                         </Typography>
                         <Typography
@@ -272,7 +268,7 @@ const HeroWrapper = () => {
                         <Typography
                             variant="lead"
                             color="white"
-                            className="mb-12 opacity-80 font-[Josefin_Sans] text-2xl"
+                            className="mb-6 lg:mb-12 opacity-80 font-[Josefin_Sans] text-xl lg:text-2xl"
                         >
                             Experience unparalleled luxury and comfort at our
                             exquisite hotel, where every moment becomes a
@@ -290,7 +286,7 @@ const HeroWrapper = () => {
                                 size="lg"
                                 color="white"
                                 variant="text"
-                                className=" rounded-none"
+                                className="rounded-none hidden md:block"
                             >
                                 Contact Us
                             </Button>
@@ -306,10 +302,7 @@ const HeroWrapper = () => {
                 />
                 <div className="absolute inset-0 grid h-full w-full place-items-center bg-filter">
                     <div className="w-3/4 text-center md:w-2/4">
-                        <Typography
-                            
-                            className=" text-primary-color text-lg  tracking-widest uppercase"
-                        >
+                        <Typography className=" text-primary-color text-lg  tracking-widest uppercase">
                             This is Luxury Hotel
                         </Typography>
                         <Typography
@@ -323,7 +316,7 @@ const HeroWrapper = () => {
                         <Typography
                             variant="lead"
                             color="white"
-                            className="mb-12 opacity-80 font-[Josefin_Sans] text-2xl"
+                            className="mb-6 lg:mb-12 opacity-80 font-[Josefin_Sans] text-xl lg:text-2xl"
                         >
                             Experience unparalleled luxury and comfort at our
                             exquisite hotel, where every moment becomes a
@@ -341,7 +334,7 @@ const HeroWrapper = () => {
                                 size="lg"
                                 color="white"
                                 variant="text"
-                                className=" rounded-none"
+                                className=" rounded-none hidden md:block"
                             >
                                 Contact Us
                             </Button>
