@@ -73,16 +73,16 @@ const Booking = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full lg:w-[60%]  flex flex-col flex-wrap justify-center items-center bg-secondory-color py-8">
-                    <div className=" flex w-full justify-center items-center gap-6">
-                        <div className=" w-[30%] flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm bg-pale-yellow">
+                <div className="w-full lg:w-[60%]  flex flex-col flex-wrap justify-center items-center bg-secondory-color py-8 px-6 sm:px-8 ">
+                    <div className=" flex w-full justify-center items-center gap-3 sm:gap-6">
+                        <div className=" w-[50%] flex justify-center flex-col md:p-2 py-4 sm:p-1 text-base bg-pale-yellow">
                             Check-in
                             <input
                                 className=" bg-transparent border border-gray-300 p-4"
                                 type="date"
                             />
                         </div>
-                        <div className="w-[30%]  flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm ">
+                        <div className=" w-[50%] flex justify-center flex-col py-4  md:p-2 sm:p-1 text-base">
                             Check-out
                             <input
                                 className=" bg-transparent border  border-gray-300 p-4"
@@ -90,8 +90,8 @@ const Booking = () => {
                             />
                         </div>
                     </div>
-                    <div className=" flex w-full justify-center items-center gap-6">
-                        <div className=" w-[30%] flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm">
+                    <div className=" flex w-full justify-center items-center gap-3 sm:gap-6">
+                        <div className=" w-[50%]  flex justify-center flex-col md:p-2 py-4 sm:p-1 text-base">
                             Adult
                             <select
                                 className="bg-transparent border border-gray-300 p-4"
@@ -106,7 +106,7 @@ const Booking = () => {
                                 <option value="2">6</option>
                             </select>
                         </div>
-                        <div className=" w-[30%] flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm">
+                        <div className="w-[50%] flex justify-center flex-col md:p-2 py-4 sm:p-1 text-base">
                             Children
                             <select
                                 className=" bg-transparent border border-gray-300 p-4"
@@ -122,8 +122,8 @@ const Booking = () => {
                             </select>
                         </div>
                     </div>
-                    <div className=" flex w-full justify-center items-center gap-6">
-                        <div className=" w-[30%] flex justify-center flex-col p-4 md:p-2 sm:p-1 text-sm">
+                    <div className=" flex w-full justify-center items-center gap-3 sm:gap-6">
+                        <div className="w-[50%] flex justify-center flex-col md:p-2 py-4 sm:p-1 text-base">
                             Rooms
                             <select
                                 className=" bg-transparent border border-gray-300 p-4"
@@ -138,7 +138,7 @@ const Booking = () => {
                                 <option value="2">6</option>
                             </select>
                         </div>
-                        <div className=" w-[30%] flex justify-end flex-col p-4 md:p-2 sm:p-1 text-sm">
+                        <div className=" w-[50%] flex justify-end flex-col md:p-2 py-4 sm:p-1 text-sm mt-4">
                             <BookNowBtn />
                         </div>
                     </div>
