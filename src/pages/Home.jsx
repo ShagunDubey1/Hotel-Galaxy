@@ -383,7 +383,7 @@ const Home = () => {
         <>
             <HeroWrapper />
 
-            <div className="lg:h-28 md:h-auto m-auto bg-pale-yellow w-[70%]  -mt-14 transform  flex flex-row flex-wrap justify-evenly items-center p-2">
+            <div className="lg:h-28 md:h-auto m-auto bg-pale-yellow w-[80%] lg:w-[70%] -mt-20 lg:-mt-14 transform  flex flex-row flex-wrap justify-evenly items-center p-2">
                 <div className=" w-28 h-24 flex flex-col justify-evenly p-0 md:p-2 sm:p-2 text-sm">
                     <p>Check-in</p>
                     <input
