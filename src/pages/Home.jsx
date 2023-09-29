@@ -47,7 +47,7 @@ const TabbedContent = () => {
     };
 
     return (
-        <div className="p-5 lg:w-1/2 flex flex-col gap-6">
+        <div className="p-5 px-6 lg:px-5 lg:w-1/2 flex flex-col gap-6">
             <div className=" text-3xl font-semibold flex flex-row justify-start gap-6">
                 <button
                     className={
@@ -451,35 +451,35 @@ const Home = () => {
             </div>
 
             {/* INFORMATION */}
-                <div className=" w-full h-auto flex lg:flex-row md:flex-row flex-col flex-wrap lg:gap-5 md:gap-10 justify-center items-center mt-20 ">
-                    <div className=" w-64 h-80 md:h-72 text-sm flex flex-col flex-wrap flex-shrink-0 justify-center items-center shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out text-center px-4">
-                        <BiMap className=" h-20 w-8" />
-                        <div className="w-1/3 h-0.5 bg-primary-color mx-auto my-4"></div>
-                        <p className=" text-p text-center">
-                            Our hotel is located in the downtown and not too far
-                            from airport and bus station so it is quite easy to
-                            find us wherever you come from.
-                        </p>
-                    </div>
-                    <div className="w-64 h-80 md:h-72 text-sm flex flex-col flex-wrap flex-shrink-0 justify-center items-center shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out text-center">
-                        <BiHomeAlt2 className=" h-20 w-8" />
-                        <div className="w-1/3 h-0.5 bg-primary-color mx-auto my-4"></div>
-                        <p className=" text-p text-center">
-                            Visit hotel provides high-quality accommodation
-                            services to clients that come to our city from all
-                            over the world throughout the year.
-                        </p>
-                    </div>
-                    <div className="w-64 h-80 md:h-72 text-sm flex flex-col flex-wrap flex-shrink-0 justify-center items-center shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out text-center">
-                        <AiOutlineStar className=" h-20 w-8" />
-                        <div className="w-1/3 h-0.5 bg-primary-color mx-auto my-4"></div>
-                        <p className=" text-p text-center">
-                            With qualified and friendly staff and high level of
-                            comfort, we are sure you will have a great
-                            experience of staying at the Visit hotel.
-                        </p>
-                    </div>
+            <div className=" w-full h-auto flex lg:flex-row md:flex-row flex-col flex-wrap lg:gap-5 md:gap-10 justify-center items-center mt-20 ">
+                <div className=" w-64 h-80 md:h-72 text-sm flex flex-col flex-wrap flex-shrink-0 justify-center items-center shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out text-center px-4">
+                    <BiMap className=" h-20 w-8" />
+                    <div className="w-1/3 h-0.5 bg-primary-color mx-auto my-4"></div>
+                    <p className=" text-p text-center">
+                        Our hotel is located in the downtown and not too far
+                        from airport and bus station so it is quite easy to find
+                        us wherever you come from.
+                    </p>
                 </div>
+                <div className="w-64 h-80 md:h-72 text-sm flex flex-col flex-wrap flex-shrink-0 justify-center items-center shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out text-center">
+                    <BiHomeAlt2 className=" h-20 w-8" />
+                    <div className="w-1/3 h-0.5 bg-primary-color mx-auto my-4"></div>
+                    <p className=" text-p text-center">
+                        Visit hotel provides high-quality accommodation services
+                        to clients that come to our city from all over the world
+                        throughout the year.
+                    </p>
+                </div>
+                <div className="w-64 h-80 md:h-72 text-sm flex flex-col flex-wrap flex-shrink-0 justify-center items-center shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out text-center">
+                    <AiOutlineStar className=" h-20 w-8" />
+                    <div className="w-1/3 h-0.5 bg-primary-color mx-auto my-4"></div>
+                    <p className=" text-p text-center">
+                        With qualified and friendly staff and high level of
+                        comfort, we are sure you will have a great experience of
+                        staying at the Visit hotel.
+                    </p>
+                </div>
+            </div>
 
             {/* FEATURES  */}
             {/* <section className=" relative w-full flex flex-col items-center justify-center pt-24">
@@ -545,7 +545,9 @@ const Home = () => {
                         />
                     </div>
                     <div className="w-auto sm:w-auto md:w-[40%] lg:w-[40%] p-4 flex flex-col justify-center items-center lg:items-start m-4">
-                        <div className="text-primary-color text-2xl font-bold mb-4">Hotel Galaxy</div>
+                        <div className="text-primary-color text-2xl font-bold mb-4">
+                            Hotel Galaxy
+                        </div>
                         <div className="text-3xl text-center mb-4">
                             <p>The Right Apartment Hotel & Resort for You</p>
                         </div>
@@ -554,10 +556,12 @@ const Home = () => {
                                 <AiOutlineHome />
                             </div>
                             <div className="flex flex-col justify-start pl-4">
-                                <p className="text-lg">5 Star Hotel in Prayagraj</p>
+                                <p className="text-lg">
+                                    5 Star Hotel in Prayagraj
+                                </p>
                                 <p className="font-extrabold text-sm">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Unde, sit.
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Unde, sit.
                                 </p>
                             </div>
                         </div>
@@ -566,10 +570,12 @@ const Home = () => {
                                 <AiOutlineHome />
                             </div>
                             <div className="flex flex-col justify-start pl-4">
-                                <p className="text-lg">5 Star Hotel in Prayagraj</p>
+                                <p className="text-lg">
+                                    5 Star Hotel in Prayagraj
+                                </p>
                                 <p className="font-extrabold text-sm">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Unde, sit.
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Unde, sit.
                                 </p>
                             </div>
                         </div>
@@ -579,7 +585,7 @@ const Home = () => {
 
             {/* SERVICES */}
 
-            <div className=" md:mx-12 lg:mx-24 mt-16 flex justify-center flex-col items-center relative py-24">
+            <div className=" md:mx-12 lg:mx-24 mt-0 lg:mt-16 flex justify-center flex-col items-center relative py-24">
                 <div className=" text-4xl font-extrabold text-center">
                     Our Services & Amenities
                 </div>
@@ -644,13 +650,13 @@ const Home = () => {
                 <div className=" text-3xl">ROOMS & HALLS</div>
                 <div className="w-1/4 mb-24 h-0.5 bg-primary-color"></div>
 
-                <div className=" relative w-full flex flex-wrap justify-center items-center gap-8 max-w-[1140px]">
+                <div className=" relative w-full flex flex-wrap justify-center items-center gap-8 max-w-[1140px] px-6 lg:px-4">
                     {roomsDetails.map((item) => (
                         <RoomCard key={item.id} {...item} />
                     ))}
                 </div>
 
-                <div className=" text-lg items-center max-w-[1140px]">
+                <div className=" text-lg items-center max-w-[1140px] px-6 lg:px-4">
                     <p className=" text-center my-8 text-xl mt-12">
                         Our hotel boasts a range of well-appointed rooms and
                         suites, each designed to provide you with a restful
@@ -682,7 +688,7 @@ const Home = () => {
             </section>
             {/* URBAN SPACE */}
 
-            <div className="relative w-full h-[35rem]">
+            <div className="relative w-full md:h-[35rem] h-[30rem]">
                 <video
                     autoPlay
                     loop
@@ -697,7 +703,7 @@ const Home = () => {
                         Hotel Galaxy
                     </div>
                     <div className=" text-3xl text-center my-4">
-                        <h2 className=" text-white text-h1 mb-12">
+                        <h2 className=" text-white text-h1 mb-12 leading-[3rem]">
                             A Warm, Exquisite, Practical and Urban Space
                         </h2>
                     </div>
