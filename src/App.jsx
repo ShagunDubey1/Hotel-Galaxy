@@ -6,8 +6,8 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
 import Events from "./pages/Events";
-import Navigation from "./layouts/navigation";
 import { useEffect } from "react";
+import NavigationBar from "./layouts/NavigationBar";
 
 function App() {
     const { pathname } = useLocation();
@@ -19,7 +19,7 @@ function App() {
 
     return (
         <>
-            <Navigation />
+            <NavigationBar />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/gallery" element={<Gallery />} />

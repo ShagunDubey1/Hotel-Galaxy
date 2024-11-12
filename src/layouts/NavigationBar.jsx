@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 import { NavLink } from "react-router-dom";
 
-const Navigation = () => {
+const NavigationBar = () => {
     const [showNavbar, setShowNavbar] = useState(false);
     const [scrolling, setScrolling] = useState(false);
     const ref = useRef(null);
@@ -136,4 +136,4 @@ const Navigation = () => {
     );
 };
 
-export default Navigation;
+export default NavigationBar;
