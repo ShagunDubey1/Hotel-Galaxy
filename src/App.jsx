@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
 import Events from "./pages/Events";
 import { useEffect } from "react";
-import NavigationBar from "./layouts/NavigationBar";
+import NavigationBar from "../src/layouts/NavigationBar";
 
 function App() {
     const { pathname } = useLocation();
