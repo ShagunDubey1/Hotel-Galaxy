@@ -4,10 +4,10 @@ import RoomCard from "../components/roomCard/RoomCard";
 // Importing icons
 import { HiUser, HiBell } from "react-icons/hi";
 import { GiRotaryPhone } from "react-icons/gi";
-import { BsAlarm, BsKey } from "react-icons/BS";
+// import { BsAlarm, BsKey } from "react-icons/BS";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { MdOutlineLocalLaundryService } from "react-icons/md";
-import { BiMap, BiHomeAlt2, BiPhoneCall } from "react-icons/bi";
+import { BiMap, BiHomeAlt2, BiPhoneCall, BiSolidAlarm, BiSolidKey } from "react-icons/bi";
 import { FaFemale } from "react-icons/fa";
 import {
     FaBriefcaseMedical,
@@ -553,7 +553,7 @@ const Home = () => {
                         <p className=" font-bold">Free Internet Access</p>
                     </div>
                     <div className=" w-48 h-32 m-1 text-center flex justify-start flex-col items-center transition-transform duration-500 transform hover:scale-110">
-                        <BsAlarm className=" h-20 w-8 fill-primary-color hover:fill-blue-950 transition duration-500 ease-in-out" />
+                        <BiSolidAlarm className=" h-20 w-8 fill-primary-color hover:fill-blue-950 transition duration-500 ease-in-out" />
                         <p className=" font-bold">Wake up call on request</p>
                     </div>
                     <div className=" w-48 h-32 m-1 text-center flex justify-start flex-col items-center transition-transform duration-500 transform hover:scale-110">
@@ -590,7 +590,7 @@ const Home = () => {
                     </div>
 
                     <div className=" w-48 h-32 m-1 text-center flex justify-start flex-col items-center transition-transform duration-500 transform hover:scale-110">
-                        <BsKey className=" h-20 w-8 fill-primary-color hover:fill-blue-950 transition duration-500 ease-in-out" />
+                        <BiSolidKey className=" h-20 w-8 fill-primary-color hover:fill-blue-950 transition duration-500 ease-in-out" />
                         <p>Digital Key</p>
                     </div>
                     <div className=" w-48 h-32 m-1 text-center flex justify-start flex-col items-center transition-transform duration-500 transform hover:scale-110">
