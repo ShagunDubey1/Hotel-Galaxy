@@ -35,15 +35,14 @@ Ensure you have the following installed on your local machine:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/your-username/hotel-galaxy.git
-    Navigate to the project directory:
 
-2. Install dependencies: Using npm:
+2. **Install dependencies: Using npm:**
 
 ```bash
 npm install
 ```
 
-3. Run the development server: Using npm:
+3. **Run the development server: Using npm:**
 
 ```bash
 npm run start
